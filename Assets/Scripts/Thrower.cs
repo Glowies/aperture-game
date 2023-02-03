@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class Thrower : MonoBehaviour
 {
+    // This is the variable to store object currently being grabbed
     public Throwable GrabbedThrowable;
-    public bool IsGrabbing;
+    public bool IsGrabbing; //bool for currently grabbing or not
     public float GrabMargin = 0.2f;
     public float ThrowForce = 4f;
 
@@ -23,14 +24,17 @@ public class Thrower : MonoBehaviour
 
     void LateUpdate()
     {
+        // Like update, called on every frame after update functions
         if(IsGrabbing)
         {
+            // If grabbing an object, update the grabbed object's location
             FollowThrower();
         }
     }
 
     private void FollowThrower()
     {
+        // change position of grabbed object (GrabbedThrowable) based on player with height offset
         var heightOffset = Vector3.up * _characterController.height;
         heightOffset += Vector3.up * GrabbedThrowable.Height / 2f;
         heightOffset += Vector3.up * GrabMargin;
@@ -39,7 +43,11 @@ public class Thrower : MonoBehaviour
 
     public void GrabThrowable(Throwable throwable)
     {
+        // This function is triggered by Throwable script when throwable object is
+        // interacted with 
+        // assign grabbed object to GrabbedThrowable variable on grab
         GrabbedThrowable = throwable;
+        // freeze rigidbody contraints on grabbed object
         throwable.Grab();
         IsGrabbing = true;
     }
