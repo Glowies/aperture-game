@@ -13,8 +13,6 @@ public class PlayerTeleport : MonoBehaviour
     [SerializeField] float downDistance = -28f;
     [SerializeField] float waitTime = 0.5f;
 
-    [SerializeField] InputAction teleportAction;
-
     private CharacterController controller;
 
     bool inPast = false;
@@ -58,40 +56,10 @@ public class PlayerTeleport : MonoBehaviour
         GetComponent<ThirdPersonController>().enabled = true;
         isTransitioning = false;
     }
-
-    void OnEnable()
-    {
-        teleportAction.Enable();
-
-    }
-
-    void OnDisable()
-    {
-        teleportAction.Disable();
-    }
-
-    private void ProcessTeleport(){
-        if (isTransitioning){return;}
-        // ifin process of teleport function, do not call function again or read input
-        if (teleportAction.ReadValue<float>() == 1)
-        {
-            Debug.Log(teleportAction.ReadValue<float>());
-            StartCoroutine("TeleportPlayer");
-            // Coroutine because TeleportPLayer is IE  to have WaitSeconds
-        }
-    }
     
-    // Start is called before the first frame update
-    // void Start()
-    // {
-    //     
-        
-    // }
-
-    // // Update is called once per frame
-    void Update()
+    void OnTeleport()
     {
-        ProcessTeleport();
-        
+        if (isTransitioning){return;}
+        StartCoroutine("TeleportPlayer");
     }
 }
