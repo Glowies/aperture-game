@@ -38,4 +38,14 @@ public class Throwable : MonoBehaviour
         _rigidbody.constraints = _startConstraints;
         _rigidbody.AddForce(force, ForceMode.Impulse);
     }
+
+    public void OnInteract(CharacterController controller)
+    {
+        if(!controller.TryGetComponent(out Thrower thrower))
+        {
+            return;
+        }
+
+        thrower.GrabThrowable(this);
+    }
 }
