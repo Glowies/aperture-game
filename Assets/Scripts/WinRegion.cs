@@ -15,6 +15,14 @@ public class WinRegion : MonoBehaviour
         {
             return;
         }
+        // if the parent is a TAV
+        if(other.transform.parent.name.Contains("TAV")){
+            // Debug.Log(true);
+            // get the parent component
+            Transform tavParent = other.transform.parent;
+            // get the future object in the TAV and get the ObjectSwap script to call function
+            tavParent.GetComponentInChildren<ObjectSwap>().EnableState(1);
+        }
         
         OnEnter.Invoke();
     }
@@ -26,7 +34,13 @@ public class WinRegion : MonoBehaviour
         {
             return;
         }
-        
+         if(other.transform.parent.name.Contains("TAV")){
+            // Debug.Log(true);
+            // get the parent component
+            Transform tavParent = other.transform.parent;
+            // get the future object in the TAV and get the ObjectSwap script to call function
+            tavParent.GetComponentInChildren<ObjectSwap>().EnableState(0);
+        }
         OnExit.Invoke();
     }
 }

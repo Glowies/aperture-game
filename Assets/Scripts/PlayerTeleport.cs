@@ -15,6 +15,8 @@ public class PlayerTeleport : MonoBehaviour
 
     private CharacterController controller;
 
+    private Thrower thrower;
+
     bool inPast = false;
     //bool to state if on bottom/past level or not 
     bool isTransitioning = false;
@@ -26,14 +28,20 @@ public class PlayerTeleport : MonoBehaviour
     IEnumerator TeleportPlayer(){
         isTransitioning = true;
         // Set transitioning to true 
+        
         controller = gameObject.GetComponent<CharacterController>();
         // get character controller from player armature 
+        // thrower = gameObject.GetComponent<Thrower>();
         
         
         float yOffset;
         if (inPast == true){
             yOffset = upDistance;
             inPast = false;
+            // throw current object
+            // if (thrower.IsGrabbing){
+            //     ThrowCurrent();
+            // }
         }
         else{ 
             yOffset = downDistance;
@@ -61,5 +69,12 @@ public class PlayerTeleport : MonoBehaviour
     {
         if (isTransitioning){return;}
         StartCoroutine("TeleportPlayer");
+    }
+
+    void ThrowCurrent(){
+        //get script and call throw method
+        // if (gameObject.GetComponent<Thrower>().IsGrabbing == true){
+        thrower.Throw();
+        // }
     }
 }
