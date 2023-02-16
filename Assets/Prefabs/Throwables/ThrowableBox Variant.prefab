@@ -73,6 +73,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  HighlightTarget: {fileID: 8503859693883863711}
 --- !u!1001 &8824995047674435880
 PrefabInstance:
   m_ObjectHideFlags: 0
