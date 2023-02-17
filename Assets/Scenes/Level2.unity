@@ -3442,7 +3442,7 @@ PrefabInstance:
         type: 3}
       propertyPath: yarnProject
       value: 
-      objectReference: {fileID: 7545569452688597077, guid: d73fe606e0bcf49aebd8901d9570764a,
+      objectReference: {fileID: 7545569452688597077, guid: 438d54b2f51ab4a7d9caf5ef46fa4f85,
         type: 3}
     - target: {fileID: 7778558434935992803, guid: 7f29e5f7ffdea4a6793cefb278b61f0c,
         type: 3}
