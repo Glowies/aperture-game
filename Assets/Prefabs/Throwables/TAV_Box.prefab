@@ -176,6 +176,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1106792406000260373, guid: 2804e8ef20ae247a2bade127222ed24c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7667243355845100582, guid: 2804e8ef20ae247a2bade127222ed24c,
         type: 3}
       propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.size
@@ -340,6 +345,11 @@ PrefabInstance:
     - target: {fileID: 182392605219694432, guid: 2804e8ef20ae247a2bade127222ed24c,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1106792406000260373, guid: 2804e8ef20ae247a2bade127222ed24c,
+        type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7667243355845100582, guid: 2804e8ef20ae247a2bade127222ed24c,
