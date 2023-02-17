@@ -156,6 +156,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  HighlightTarget: {fileID: 6907492498132686037}
 --- !u!1 &3055568046692086195
 GameObject:
   m_ObjectHideFlags: 0
