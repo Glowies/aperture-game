@@ -31,17 +31,12 @@ public class PlayerTeleport : MonoBehaviour
         
         controller = gameObject.GetComponent<CharacterController>();
         // get character controller from player armature 
-        // thrower = gameObject.GetComponent<Thrower>();
         
         
         float yOffset;
         if (inPast == true){
             yOffset = upDistance;
             inPast = false;
-            // throw current object
-            // if (thrower.IsGrabbing){
-            //     ThrowCurrent();
-            // }
         }
         else{ 
             yOffset = downDistance;
@@ -68,13 +63,15 @@ public class PlayerTeleport : MonoBehaviour
     void OnTeleport()
     {
         if (isTransitioning){return;}
+        // check if player is grabbing an object, if so, do not teleport
+        thrower = gameObject.GetComponent<Thrower>();
+        if (thrower.IsGrabbing){
+            Debug.Log("Cannot teleport while holding object");
+            return;
+        }
+        //otherwise start teleport sequence
         StartCoroutine("TeleportPlayer");
     }
 
-    void ThrowCurrent(){
-        //get script and call throw method
-        // if (gameObject.GetComponent<Thrower>().IsGrabbing == true){
-        thrower.Throw();
-        // }
-    }
+
 }

@@ -43,6 +43,12 @@ public class Thrower : MonoBehaviour
 
     public void GrabThrowable(Throwable throwable)
     {
+        // Make sure only one object is grabbed at a time
+        if(IsGrabbing)
+        {
+            return;
+        }
+
         // This function is triggered by Throwable script when throwable object is
         // interacted with 
         // assign grabbed object to GrabbedThrowable variable on grab
