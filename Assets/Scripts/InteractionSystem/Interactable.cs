@@ -13,7 +13,11 @@ public class Interactable : MonoBehaviour
 
     void Awake()
     {
-        _startLayer = HighlightTarget.layer;
+        if(HighlightTarget != null)
+        {
+            _startLayer = HighlightTarget.layer;
+        }
+        
         _outlineLayer = LayerMask.NameToLayer("Outlined");
     }
 
