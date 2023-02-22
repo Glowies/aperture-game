@@ -559,7 +559,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -8606337631444222834, guid: f66639c93c0894710a402f5e81ef609f, type: 3}
+  - {fileID: 2100000, guid: abe0370246fad4678b52630071df22b6, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -841,7 +841,7 @@ GameObject:
   - component: {fileID: 5996423350590752092}
   - component: {fileID: 5996423350590752095}
   m_Layer: 0
-  m_Name: GrownPlant
+  m_Name: GenericGrownPlant
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -854,9 +854,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5996423350590752093}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -2.4767041, y: -2.4884377, z: -8.83}
-  m_LocalScale: {x: 0.20832, y: 0.20832, z: 0.20832}
+  m_LocalScale: {x: 0.6443642, y: 0.6443642, z: 0.6443642}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5996423350664856668}
@@ -954,7 +954,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 7820660498664210953, guid: f66639c93c0894710a402f5e81ef609f, type: 3}
+  - {fileID: 2100000, guid: f27a16c3254eb482582a6fcb388f161e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
