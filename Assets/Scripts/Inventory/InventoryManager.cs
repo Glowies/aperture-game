@@ -33,9 +33,15 @@ public class InventoryManager : MonoBehaviour
         return GetInventorySlot(itemType).itemAmount;
     }
 
-    public int ReduceCurrentItemAmount(ItemType itemType){
-        // reduce the amount of a certain item the player currently has 
-        return GetInventorySlot(itemType).itemAmount--;
+    public int ReduceCurrentItemAmount(ItemType itemType, int reduce){
+        // reduce the amount of a certain item the player currently has by reduce if 
+        // the amount of the item will remain above 0
+        int reducedAmount = GetInventorySlot(itemType).itemAmount - reduce;
+        if (reducedAmount >= 0){
+            GetInventorySlot(itemType).itemAmount = reducedAmount;
+            return reducedAmount;
+        } 
+        return GetInventorySlot(itemType).itemAmount;
     }
 
     // // Start is called before the first frame update
