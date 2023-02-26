@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028305, g: 0.22571313, b: 0.3069213, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028338, g: 0.22571345, b: 0.30692208, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1950,8 +1950,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   invSlots:
   - itemType: 0
+    itemImage: {fileID: 21300000, guid: cadb12f85b7874686ba8c13a9382539e, type: 3}
     itemAmount: 0
   - itemType: 1
+    itemImage: {fileID: 21300000, guid: 5ebe1dd0d02934debac55cb6a0a1c11f, type: 3}
     itemAmount: 0
 --- !u!1001 &3469751670670405277
 PrefabInstance:

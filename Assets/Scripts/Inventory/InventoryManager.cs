@@ -15,6 +15,7 @@ public class InventoryManager : MonoBehaviour
         // 2. The amount of that item
 
         public ItemType itemType;
+        public Sprite itemImage;
         public int itemAmount;
     }
 
