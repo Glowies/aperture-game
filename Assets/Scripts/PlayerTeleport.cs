@@ -30,7 +30,7 @@ public class PlayerTeleport : MonoBehaviour
         // Play aperture animation
         if(apertureAnimator != null)
         {
-            apertureAnimator.ShutterDuration = waitTime;
+            apertureAnimator.ShutterDuration = waitTime + 0.1f;
             apertureAnimator.ClosedPauseDuration = .8f;
             apertureAnimator.PlayShutterAnimation();
         }
