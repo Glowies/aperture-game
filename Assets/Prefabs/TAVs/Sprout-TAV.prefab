@@ -174,6 +174,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GrownPlant
       objectReference: {fileID: 0}
+    - target: {fileID: 5996423350609576519, guid: 4cfbf908010674bf0aa7624f147018af,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: f27a16c3254eb482582a6fcb388f161e, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4cfbf908010674bf0aa7624f147018af, type: 3}
 --- !u!4 &6338818312257398536 stripped
@@ -195,6 +200,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2148307488404233182}
     m_Modifications:
+    - target: {fileID: 703872231636153428, guid: e528204069fb942409ca9ed1ac3633ea,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: f27a16c3254eb482582a6fcb388f161e, type: 2}
     - target: {fileID: 8199891988222124826, guid: e528204069fb942409ca9ed1ac3633ea,
         type: 3}
       propertyPath: m_Name
