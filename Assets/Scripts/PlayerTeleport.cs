@@ -11,7 +11,8 @@ public class PlayerTeleport : MonoBehaviour
     [Tooltip("Adjust Teleport Time and Distance here")]
     [SerializeField] float upDistance = 32f;
     [SerializeField] float downDistance = -28f;
-    [SerializeField] float waitTime = 0.5f;
+    [SerializeField] float waitTime = 0.2f;
+    [SerializeField] ApertureAnimator apertureAnimator;
 
     private CharacterController controller;
 
@@ -26,6 +27,14 @@ public class PlayerTeleport : MonoBehaviour
     // Need to apply the script to the player armature which hs character controlle component
 
     IEnumerator TeleportPlayer(){
+        // Play aperture animation
+        if(apertureAnimator != null)
+        {
+            apertureAnimator.ShutterDuration = waitTime;
+            apertureAnimator.ClosedPauseDuration = .8f;
+            apertureAnimator.PlayShutterAnimation();
+        }
+
         isTransitioning = true;
         // Set transitioning to true 
         

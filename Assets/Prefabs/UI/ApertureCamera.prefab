@@ -27,7 +27,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5045000180131774675}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 7.99, z: 0}
+  m_LocalPosition: {x: 0, y: 99999, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -131,6 +131,7 @@ MonoBehaviour:
   OpenHeight: 3
   ClosedHeight: 0
   ShutterDuration: 0.5
+  ClosedPauseDuration: 0.2
   PanelParents:
   - {fileID: 9050486365472668119}
   - {fileID: 3174954836247995867}
@@ -472,7 +473,7 @@ PrefabInstance:
     - target: {fileID: 3254372698596526993, guid: fa83cae5c2aef452ca52795ba06480b7,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4503469296304660339, guid: fa83cae5c2aef452ca52795ba06480b7,
         type: 3}

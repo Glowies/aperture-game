@@ -7,7 +7,7 @@ public class ApertureAnimator : MonoBehaviour
     public float OpenHeight = 3;
     public float ClosedHeight = 0;
 
-    public float ShutterDuration = .5f;
+    public float ShutterDuration = .3f;
     public float ClosedPauseDuration = .2f;
 
     public List<Transform> PanelParents;
