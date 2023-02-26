@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using StarterAssets;
+using TMPro;
 
 public class PlayerTeleport : MonoBehaviour
 {
@@ -11,7 +12,9 @@ public class PlayerTeleport : MonoBehaviour
     [Tooltip("Adjust Teleport Time and Distance here")]
     [SerializeField] float upDistance = 32f;
     [SerializeField] float downDistance = -28f;
-    [SerializeField] float waitTime = 0.5f;
+    [SerializeField] float waitTime = 0.2f;
+    [SerializeField] ApertureAnimator apertureAnimator;
+    [SerializeField] TextMeshProUGUI timeText;
 
     private CharacterController controller;
 
@@ -25,7 +28,21 @@ public class PlayerTeleport : MonoBehaviour
     // used this tutorial https://youtu.be/xmhm5jGwonc
     // Need to apply the script to the player armature which hs character controlle component
 
+    void Start()
+    {
+        // update time indicator
+        UpdateTimeIndicator();
+    }
+
     IEnumerator TeleportPlayer(){
+        // Play aperture animation
+        if(apertureAnimator != null)
+        {
+            apertureAnimator.ShutterDuration = waitTime + 0.1f;
+            apertureAnimator.ClosedPauseDuration = .8f;
+            apertureAnimator.PlayShutterAnimation();
+        }
+
         isTransitioning = true;
         // Set transitioning to true 
         
@@ -50,9 +67,14 @@ public class PlayerTeleport : MonoBehaviour
         // disable third person controller script to avoid controlller.move being called when controller disabled
         GetComponent<ThirdPersonController>().enabled = false;
         controller.enabled = false;
+
         yield return new WaitForSeconds(waitTime);
+
+        // update time indicator
+        UpdateTimeIndicator();
         // keep current x and z position but add to or subtract from current y position
         transform.localPosition = new Vector3(transform.localPosition.x, newYPos, transform.localPosition.z);
+        
         yield return new WaitForSeconds(waitTime);
         // enable controller and set transitioning to false
         controller.enabled = true;
@@ -73,5 +95,13 @@ public class PlayerTeleport : MonoBehaviour
         StartCoroutine("TeleportPlayer");
     }
 
+    void UpdateTimeIndicator()
+    {
+        if(timeText == null)
+        {
+            return;
+        }
 
+        timeText.text = inPast ? "Past" : "Future";
+    }
 }
