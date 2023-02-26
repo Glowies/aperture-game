@@ -61,7 +61,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 8999676466967722699, guid: f66639c93c0894710a402f5e81ef609f, type: 3}
+  - {fileID: 2100000, guid: abe0370246fad4678b52630071df22b6, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -109,8 +109,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1128644216248083588}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0.63, z: 0}
+  m_LocalScale: {x: 0.58310324, y: 0.58310324, z: 0.58310324}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8199891988222124838}
@@ -157,6 +157,38 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   HighlightTarget: {fileID: 6907492498132686037}
+--- !u!1 &1610492365639280388
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4931365078964988762}
+  m_Layer: 0
+  m_Name: plants parent
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4931365078964988762
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1610492365639280388}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.5713685, y: 0.5713685, z: 0.5713685}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 6095489573447503471}
+  m_Father: {fileID: 8199891988222124838}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3055568046692086195
 GameObject:
   m_ObjectHideFlags: 0
@@ -218,7 +250,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -1849860528220826880, guid: f66639c93c0894710a402f5e81ef609f, type: 3}
+  - {fileID: 2100000, guid: f27a16c3254eb482582a6fcb388f161e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -429,8 +461,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6907492498132686037}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.61, y: -0.25, z: -2.2}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.6100001, y: 0.01, z: -2.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -438,7 +470,7 @@ Transform:
   - {fileID: 3047319816124822512}
   - {fileID: 5391945483908296456}
   - {fileID: 494400298392639917}
-  m_Father: {fileID: 8199891988222124838}
+  m_Father: {fileID: 4931365078964988762}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8199891988222124826
@@ -453,6 +485,7 @@ GameObject:
   - component: {fileID: 8418544984075944355}
   - component: {fileID: 8199891988222124836}
   - component: {fileID: 8199891988222124827}
+  - component: {fileID: -8795993461867802464}
   m_Layer: 0
   m_Name: SproutPlant
   m_TagString: Untagged
@@ -472,7 +505,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 6095489573447503471}
+  - {fileID: 4931365078964988762}
   - {fileID: 6836098630492469716}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -488,8 +521,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.0349325, y: 2.83, z: 1.2830707}
-  m_Center: {x: 0.03738384, y: 1.21, z: 0.007492006}
+  m_Size: {x: 1.1, y: 2, z: 1.1}
+  m_Center: {x: 0, y: 1, z: 0}
 --- !u!54 &8199891988222124836
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -520,3 +553,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IsGrabbed: 0
   Height: 0
+--- !u!114 &-8795993461867802464
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8199891988222124826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0f6cb7dffc25400c8442392ee2b3567, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DeadPlant: {fileID: 0}

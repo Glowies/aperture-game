@@ -10,6 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 210656547528087196}
   - component: {fileID: 3128577143761739768}
+  - component: {fileID: 5028864302650338276}
+  - component: {fileID: 7927794880542073403}
+  - component: {fileID: 5878319473609283468}
   m_Layer: 0
   m_Name: tree sapling
   m_TagString: Untagged
@@ -49,6 +52,48 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.038474176, y: 0.056893695, z: 0.03564037}
   m_Center: {x: 0.0007084713, y: 0.02621254, z: 0.000000052503594}
+--- !u!54 &5028864302650338276
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 695726630096981030}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &7927794880542073403
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 695726630096981030}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 692e054f0f69e446bac8eeeac6f3ff2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IsGrabbed: 0
+  Height: 0
+--- !u!114 &5878319473609283468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 695726630096981030}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0f6cb7dffc25400c8442392ee2b3567, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1313401715285290172
 GameObject:
   m_ObjectHideFlags: 0
