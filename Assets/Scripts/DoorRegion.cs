@@ -19,6 +19,7 @@ public class DoorRegion : MonoBehaviour
         // inventory has enough of that item
         if (inventory.GetCurrentItemAmount(itemType) >= consume){
             inventory.ReduceCurrentItemAmount(itemType, consume);
+            gameObject.SetActive(false);
         }
         else{
             Debug.Log("You dont have enough of this item");
