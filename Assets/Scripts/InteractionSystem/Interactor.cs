@@ -97,6 +97,7 @@ public class Interactor : MonoBehaviour
         if(_targetInteractable != null)
         {
             var position = _targetInteractable.transform.position;
+            position += _targetInteractable.IndicatorOffset;
             screenPosition = Camera.main.WorldToScreenPoint(position);
         }
 
