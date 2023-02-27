@@ -215,7 +215,7 @@ PrefabInstance:
     - target: {fileID: 1437392532240502456, guid: 8cf1533b8ba9542688362da74ffb529a,
         type: 3}
       propertyPath: m_Size.y
-      value: 12.34462
+      value: 2.3
       objectReference: {fileID: 0}
     - target: {fileID: 1437392532240502456, guid: 8cf1533b8ba9542688362da74ffb529a,
         type: 3}
@@ -291,6 +291,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3769870292733660721, guid: 8cf1533b8ba9542688362da74ffb529a,
+        type: 3}
+      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3769870292733660721, guid: 8cf1533b8ba9542688362da74ffb529a,
+        type: 3}
+      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 8619506332553732451}
+    - target: {fileID: 3769870292733660721, guid: 8cf1533b8ba9542688362da74ffb529a,
+        type: 3}
+      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetActive
+      objectReference: {fileID: 0}
+    - target: {fileID: 3769870292733660721, guid: 8cf1533b8ba9542688362da74ffb529a,
+        type: 3}
+      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UnityEngine.GameObject, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 5866745485042245378, guid: 8cf1533b8ba9542688362da74ffb529a,
         type: 3}

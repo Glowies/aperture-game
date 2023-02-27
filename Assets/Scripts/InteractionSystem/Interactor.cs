@@ -80,6 +80,15 @@ public class Interactor : MonoBehaviour
         _closeInteractables.Remove(interactable);
     }
 
+    public void RemoveInteractable(Interactable interactable)
+    {
+        if(interactable != null && _closeInteractables.Contains(interactable))
+        {
+            _closeInteractables.Remove(interactable);
+            _targetInteractable = null;
+        }
+    }
+
     public void OnInteract()
     {
         if(_targetInteractable == null)
@@ -87,7 +96,7 @@ public class Interactor : MonoBehaviour
             return;
         }
 
-        _targetInteractable.Interact(_controller);
+        _targetInteractable.Interact(_controller, this);
     }
 
     private void UpdateIndicatorPosition()
