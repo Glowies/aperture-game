@@ -127,7 +127,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.1165962, y: 2, z: 3.460926}
+  m_Size: {x: 3.1165962, y: 3.15, z: 3.460926}
   m_Center: {x: -0.0020106435, y: 0, z: -0.08734918}
 --- !u!114 &2549410193709697457
 MonoBehaviour:
@@ -157,6 +157,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   HighlightTarget: {fileID: 6907492498132686037}
+  IndicatorOffset: {x: 0, y: 0, z: 0}
 --- !u!1 &1610492365639280388
 GameObject:
   m_ObjectHideFlags: 0
