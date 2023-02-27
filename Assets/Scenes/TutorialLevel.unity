@@ -5843,8 +5843,18 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6195526710790862562, guid: 09c79cec4701a49f3b381d1782132d8c,
         type: 3}
+      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6195526710790862562, guid: 09c79cec4701a49f3b381d1782132d8c,
+        type: 3}
       propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6195526710790862562, guid: 09c79cec4701a49f3b381d1782132d8c,
+        type: 3}
+      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6195526710790862562, guid: 09c79cec4701a49f3b381d1782132d8c,
         type: 3}
@@ -5853,13 +5863,43 @@ PrefabInstance:
       objectReference: {fileID: 239477881}
     - target: {fileID: 6195526710790862562, guid: 09c79cec4701a49f3b381d1782132d8c,
         type: 3}
+      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 492407787}
+    - target: {fileID: 6195526710790862562, guid: 09c79cec4701a49f3b381d1782132d8c,
+        type: 3}
+      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6195526710790862562, guid: 09c79cec4701a49f3b381d1782132d8c,
+        type: 3}
       propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: SetActive
       objectReference: {fileID: 0}
     - target: {fileID: 6195526710790862562, guid: 09c79cec4701a49f3b381d1782132d8c,
         type: 3}
+      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: LoadScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 6195526710790862562, guid: 09c79cec4701a49f3b381d1782132d8c,
+        type: 3}
       propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: UnityEngine.GameObject, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6195526710790862562, guid: 09c79cec4701a49f3b381d1782132d8c,
+        type: 3}
+      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: SceneLoadTrigger, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6195526710790862562, guid: 09c79cec4701a49f3b381d1782132d8c,
+        type: 3}
+      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_StringArgument
+      value: Level4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6195526710790862562, guid: 09c79cec4701a49f3b381d1782132d8c,
+        type: 3}
+      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 8619506332553732451, guid: 09c79cec4701a49f3b381d1782132d8c,
         type: 3}
@@ -5923,6 +5963,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 09c79cec4701a49f3b381d1782132d8c, type: 3}
+--- !u!1 &492407786 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3513219296216213457, guid: 09c79cec4701a49f3b381d1782132d8c,
+    type: 3}
+  m_PrefabInstance: {fileID: 492407785}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &492407787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 492407786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e80fc52d4ffa49989fb81a9ad42d68c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &495920749
 GameObject:
   m_ObjectHideFlags: 0
@@ -14947,7 +15005,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-69034
+  m_Name: pb_Mesh174900
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -20826,17 +20884,17 @@ PrefabInstance:
     - target: {fileID: 8995223356804971481, guid: 09c79cec4701a49f3b381d1782132d8c,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 8.112238
+      value: 8.03
       objectReference: {fileID: 0}
     - target: {fileID: 8995223356804971481, guid: 09c79cec4701a49f3b381d1782132d8c,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.87
+      value: -0.47
       objectReference: {fileID: 0}
     - target: {fileID: 8995223356804971481, guid: 09c79cec4701a49f3b381d1782132d8c,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -8.399149
+      value: -7.04
       objectReference: {fileID: 0}
     - target: {fileID: 8995223356804971481, guid: 09c79cec4701a49f3b381d1782132d8c,
         type: 3}
