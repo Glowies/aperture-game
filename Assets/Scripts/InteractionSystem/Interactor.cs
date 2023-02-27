@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Interactor : MonoBehaviour
 {
+    public RectTransform InteractIndicator;
+
     private CharacterController _controller;
     private List<Interactable> _closeInteractables;
     private Interactable _targetInteractable;
@@ -12,11 +14,17 @@ public class Interactor : MonoBehaviour
     {
         TryGetComponent(out _controller);
         _closeInteractables = new();
+        _targetInteractable = null;
     }
 
     void Update()
     {
         FindClosestInteractable();
+    }
+
+    void LateUpdate()
+    {
+        UpdateIndicatorPosition();
     }
 
     private void FindClosestInteractable()
@@ -80,5 +88,18 @@ public class Interactor : MonoBehaviour
         }
 
         _targetInteractable.Interact(_controller);
+    }
+
+    private void UpdateIndicatorPosition()
+    {
+        var screenPosition = Vector3.one * -999;
+
+        if(_targetInteractable != null)
+        {
+            var position = _targetInteractable.transform.position;
+            screenPosition = Camera.main.WorldToScreenPoint(position);
+        }
+
+        InteractIndicator.position = screenPosition;
     }
 }
