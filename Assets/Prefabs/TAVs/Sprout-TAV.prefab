@@ -46,7 +46,7 @@ ParentConstraint:
   m_TranslationAtRest: {x: 0, y: 0, z: 0}
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_TranslationOffsets:
-  - {x: 0, y: 30, z: 0}
+  - {x: -2.1399999, y: 30, z: 0}
   m_RotationOffsets:
   - {x: 0, y: 0, z: 0}
   m_AffectTranslationX: 1
@@ -121,6 +121,21 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5996423350590752092, guid: 4cfbf908010674bf0aa7624f147018af,
         type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.96864206
+      objectReference: {fileID: 0}
+    - target: {fileID: 5996423350590752092, guid: 4cfbf908010674bf0aa7624f147018af,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.96864206
+      objectReference: {fileID: 0}
+    - target: {fileID: 5996423350590752092, guid: 4cfbf908010674bf0aa7624f147018af,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.96864206
+      objectReference: {fileID: 0}
+    - target: {fileID: 5996423350590752092, guid: 4cfbf908010674bf0aa7624f147018af,
+        type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -174,6 +189,36 @@ PrefabInstance:
       propertyPath: m_Name
       value: GrownPlant
       objectReference: {fileID: 0}
+    - target: {fileID: 5996423350590752095, guid: 4cfbf908010674bf0aa7624f147018af,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 4.4149027
+      objectReference: {fileID: 0}
+    - target: {fileID: 5996423350590752095, guid: 4cfbf908010674bf0aa7624f147018af,
+        type: 3}
+      propertyPath: m_Size.z
+      value: 4.414897
+      objectReference: {fileID: 0}
+    - target: {fileID: 5996423350590752095, guid: 4cfbf908010674bf0aa7624f147018af,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5996423350590752095, guid: 4cfbf908010674bf0aa7624f147018af,
+        type: 3}
+      propertyPath: m_Center.x
+      value: 2.3332376
+      objectReference: {fileID: 0}
+    - target: {fileID: 5996423350590752095, guid: 4cfbf908010674bf0aa7624f147018af,
+        type: 3}
+      propertyPath: m_Center.y
+      value: 3.9999998
+      objectReference: {fileID: 0}
+    - target: {fileID: 5996423350590752095, guid: 4cfbf908010674bf0aa7624f147018af,
+        type: 3}
+      propertyPath: m_Center.z
+      value: -2.7585924
+      objectReference: {fileID: 0}
     - target: {fileID: 5996423350609576519, guid: 4cfbf908010674bf0aa7624f147018af,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -210,6 +255,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SproutPlant
       objectReference: {fileID: 0}
+    - target: {fileID: 8199891988222124836, guid: e528204069fb942409ca9ed1ac3633ea,
+        type: 3}
+      propertyPath: m_Mass
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 8199891988222124838, guid: e528204069fb942409ca9ed1ac3633ea,
         type: 3}
       propertyPath: m_RootOrder
@@ -218,22 +268,22 @@ PrefabInstance:
     - target: {fileID: 8199891988222124838, guid: e528204069fb942409ca9ed1ac3633ea,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.3636
+      value: 1.4659262
       objectReference: {fileID: 0}
     - target: {fileID: 8199891988222124838, guid: e528204069fb942409ca9ed1ac3633ea,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.3636
+      value: 1.4659262
       objectReference: {fileID: 0}
     - target: {fileID: 8199891988222124838, guid: e528204069fb942409ca9ed1ac3633ea,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.3636
+      value: 1.4659262
       objectReference: {fileID: 0}
     - target: {fileID: 8199891988222124838, guid: e528204069fb942409ca9ed1ac3633ea,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 2.14
       objectReference: {fileID: 0}
     - target: {fileID: 8199891988222124838, guid: e528204069fb942409ca9ed1ac3633ea,
         type: 3}
