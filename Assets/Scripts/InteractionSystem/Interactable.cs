@@ -13,7 +13,6 @@ public class Interactable : MonoBehaviour
     private int _startLayer;
     private int _outlineLayer;
     private Collider _collider;
-    private Interactor _interactor;
 
     void Awake()
     {
@@ -28,15 +27,9 @@ public class Interactable : MonoBehaviour
         _outlineLayer = LayerMask.NameToLayer("Outlined");
     }
 
-    public void Interact(CharacterController controller, Interactor interactor)
+    public void Interact(CharacterController controller)
     {
-        _interactor = interactor;
         OnInteract.Invoke(controller);
-    }
-
-    void OnDisable()
-    {
-        _interactor?.RemoveInteractable(this);
     }
 
     public void ToggleHighlight(bool value)
