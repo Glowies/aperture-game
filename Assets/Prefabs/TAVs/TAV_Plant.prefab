@@ -247,6 +247,32 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 7586163970950367761}
   m_PrefabAsset: {fileID: 0}
+--- !u!1773428102 &1847206934283515638
+ParentConstraint:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2571634902328939671}
+  m_Enabled: 1
+  m_Weight: 1
+  m_TranslationAtRest: {x: 0, y: 0, z: 0}
+  m_RotationAtRest: {x: 0, y: 0, z: 0}
+  m_TranslationOffsets:
+  - {x: 0, y: 0, z: 0}
+  m_RotationOffsets:
+  - {x: 0, y: 0, z: 0}
+  m_AffectTranslationX: 1
+  m_AffectTranslationY: 1
+  m_AffectTranslationZ: 1
+  m_AffectRotationX: 1
+  m_AffectRotationY: 1
+  m_AffectRotationZ: 1
+  m_IsContraintActive: 1
+  m_IsLocked: 0
+  m_Sources:
+  - sourceTransform: {fileID: 7087714473765183543}
+    weight: 1
 --- !u!4 &2571634902328939691 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5401856241814019770, guid: e3760fe3acbe74eff989ca09effc2ed4,
