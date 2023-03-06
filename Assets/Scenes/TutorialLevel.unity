@@ -2942,6 +2942,11 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -9.540001
       objectReference: {fileID: 0}
+    - target: {fileID: 7020047569311903696, guid: a78c13db4c93a4b249b1cc719f4e8021,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 28f0f6ed76037424b88ee8d35ee3bf9c, type: 2}
     - target: {fileID: 8276439791813517050, guid: a78c13db4c93a4b249b1cc719f4e8021,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -2977,6 +2982,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CatWithIndicators
       objectReference: {fileID: 0}
+    - target: {fileID: 9059282054841237070, guid: a78c13db4c93a4b249b1cc719f4e8021,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 28f0f6ed76037424b88ee8d35ee3bf9c, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a78c13db4c93a4b249b1cc719f4e8021, type: 3}
 --- !u!1 &292333166
@@ -21102,7 +21112,7 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 0.6299122, g: 0.371529, b: 0.6509434, a: 1}
+  m_Color: {r: 0.79595894, g: 0.5931827, b: 0.8113208, a: 1}
   m_Intensity: 0.9
   m_Range: 10
   m_SpotAngle: 30
