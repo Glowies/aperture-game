@@ -15,6 +15,7 @@ public class PlayerTeleport : MonoBehaviour
     [SerializeField] float waitTime = 0.2f;
     [SerializeField] ApertureAnimator apertureAnimator;
     [SerializeField] TextMeshProUGUI timeText;
+    [SerializeField] GameObject PastVolume;
 
     private CharacterController controller;
 
@@ -70,6 +71,8 @@ public class PlayerTeleport : MonoBehaviour
 
         yield return new WaitForSeconds(waitTime);
 
+        // toggle the Past Volume visual effects
+        PastVolume.SetActive(inPast);
         // update time indicator
         UpdateTimeIndicator();
         // keep current x and z position but add to or subtract from current y position
