@@ -288,25 +288,35 @@ PrefabInstance:
       propertyPath: IgnoreTag
       value: TAV
       objectReference: {fileID: 0}
+    - target: {fileID: 1307491979195138040, guid: 6a3457d90896abd4ba53cb075676a729,
+        type: 3}
+      propertyPath: GrabMargin
+      value: -1.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1307491979195138040, guid: 6a3457d90896abd4ba53cb075676a729,
+        type: 3}
+      propertyPath: GrabForwardOffset
+      value: 1.7
+      objectReference: {fileID: 0}
     - target: {fileID: 1541125750292758979, guid: 6a3457d90896abd4ba53cb075676a729,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.27635
+      value: 19.7
       objectReference: {fileID: 0}
     - target: {fileID: 1541125750292758979, guid: 6a3457d90896abd4ba53cb075676a729,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.1850002
+      value: 1.545
       objectReference: {fileID: 0}
     - target: {fileID: 1541125750292758979, guid: 6a3457d90896abd4ba53cb075676a729,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 18.916283
+      value: -2.7000008
       objectReference: {fileID: 0}
     - target: {fileID: 1541125750292758979, guid: 6a3457d90896abd4ba53cb075676a729,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.719742
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1541125750292758979, guid: 6a3457d90896abd4ba53cb075676a729,
         type: 3}
@@ -316,7 +326,7 @@ PrefabInstance:
     - target: {fileID: 1541125750292758979, guid: 6a3457d90896abd4ba53cb075676a729,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.6942417
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3902342320635784481, guid: 6a3457d90896abd4ba53cb075676a729,
         type: 3}

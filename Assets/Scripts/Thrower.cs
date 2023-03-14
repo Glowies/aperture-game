@@ -8,6 +8,7 @@ public class Thrower : MonoBehaviour
     public Throwable GrabbedThrowable;
     public bool IsGrabbing; //bool for currently grabbing or not
     public float GrabMargin = 0.2f;
+    public float GrabForwardOffset = 1f;
     public float ThrowForce = 4f;
 
     private CharacterController _characterController;
@@ -15,11 +16,6 @@ public class Thrower : MonoBehaviour
     void Awake()
     {
         TryGetComponent(out _characterController);
-    }
-
-    void Start()
-    {
-        // GrabThrowable(GrabbedThrowable);
     }
 
     void LateUpdate()
@@ -35,10 +31,11 @@ public class Thrower : MonoBehaviour
     private void FollowThrower()
     {
         // change position of grabbed object (GrabbedThrowable) based on player with height offset
-        var heightOffset = Vector3.up * _characterController.height;
-        heightOffset += Vector3.up * GrabbedThrowable.Height / 2f;
-        heightOffset += Vector3.up * GrabMargin;
-        GrabbedThrowable.transform.position = transform.position + heightOffset;
+        var offset = Vector3.up * _characterController.height;
+        offset += Vector3.up * GrabbedThrowable.Height / 2f;
+        offset += Vector3.up * GrabMargin;
+        offset += GrabForwardOffset * transform.forward;
+        GrabbedThrowable.transform.position = transform.position + offset;
     }
 
     public void GrabThrowable(Throwable throwable)
@@ -63,8 +60,7 @@ public class Thrower : MonoBehaviour
     [ContextMenu("throw")]
     public void Throw()
     {
-        var throwDireciton = transform.forward;
-        throwDireciton.y = 1;
+        var throwDireciton = transform.forward + transform.up * -8;
         throwDireciton.Normalize();
 
         IsGrabbing = false;

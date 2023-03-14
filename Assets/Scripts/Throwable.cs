@@ -10,11 +10,13 @@ public class Throwable : MonoBehaviour
 
     private Rigidbody _rigidbody;
     private RigidbodyConstraints _startConstraints;
+    private Interactable[] _interactables;
 
     void Awake()
     {
         TryGetComponent(out _rigidbody);
         _startConstraints = _rigidbody.constraints;
+        _interactables = GetComponentsInChildren<Interactable>();
 
         if(TryGetComponent(out Collider collider))
         {
@@ -30,6 +32,7 @@ public class Throwable : MonoBehaviour
     {
         IsGrabbed = true;
         _rigidbody.constraints = RigidbodyConstraints.FreezeAll;
+        ToggleInteractables(false);
     }
 
     public void Throw(Vector3 force)
@@ -37,6 +40,7 @@ public class Throwable : MonoBehaviour
         IsGrabbed = false;
         _rigidbody.constraints = _startConstraints;
         _rigidbody.AddForce(force, ForceMode.Impulse);
+        ToggleInteractables(true);
     }
 
     public void OnInteract(CharacterController controller)
@@ -47,5 +51,13 @@ public class Throwable : MonoBehaviour
         }
 
         thrower.GrabThrowable(this);
+    }
+
+    private void ToggleInteractables(bool value)
+    {
+        foreach(var interactable in _interactables)
+        {
+            interactable.enabled = value;
+        }
     }
 }
