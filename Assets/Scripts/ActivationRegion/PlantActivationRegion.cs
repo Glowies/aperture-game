@@ -17,6 +17,7 @@ public class PlantActivationRegion : MonoBehaviour
         }
         
         plant.ToggleDeadPlant(false);
+        plant.TogglePastPlantMesh(false);
 
         OnEnter.Invoke();
     }
@@ -30,6 +31,7 @@ public class PlantActivationRegion : MonoBehaviour
         }
 
         plant.ToggleDeadPlant(true);
+        plant.TogglePastPlantMesh(true);
 
         OnExit.Invoke();
     }

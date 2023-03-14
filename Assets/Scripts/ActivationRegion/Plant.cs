@@ -9,6 +9,8 @@ using UnityEngine;
 public class Plant : MonoBehaviour
 {
     public GameObject DeadPlant;
+    public GameObject pastPlantMesh;
 
     public void ToggleDeadPlant(bool value) => DeadPlant?.SetActive(value);
+    public void TogglePastPlantMesh(bool value) => pastPlantMesh?.SetActive(value);
 }
