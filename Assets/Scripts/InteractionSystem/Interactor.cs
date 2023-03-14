@@ -72,6 +72,11 @@ public class Interactor : MonoBehaviour
         var minDistance = float.PositiveInfinity;
         foreach(var interactable in _closeInteractables)
         {
+            if(!interactable.isActiveAndEnabled)
+            {
+                continue;
+            }
+            
             var position = interactable.transform.position;
             var currDistance = Vector3.Distance(transform.position, position);
             if(currDistance < minDistance)

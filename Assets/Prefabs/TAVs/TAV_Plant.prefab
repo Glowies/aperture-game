@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5943509060643948335}
   m_Layer: 0
   m_Name: TAV_Plant
-  m_TagString: Untagged
+  m_TagString: TAV
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -45,7 +45,7 @@ GameObject:
   - component: {fileID: 7087714473765183540}
   m_Layer: 0
   m_Name: Future Parent
-  m_TagString: Untagged
+  m_TagString: TAV
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -104,6 +104,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: tree dead
+      objectReference: {fileID: 0}
+    - target: {fileID: 7418988464831961865, guid: 9edf5f870afdc491581a2e90d7ed8851,
+        type: 3}
+      propertyPath: m_TagString
+      value: TAV
       objectReference: {fileID: 0}
     - target: {fileID: 7907857085398237619, guid: 9edf5f870afdc491581a2e90d7ed8851,
         type: 3}
@@ -275,6 +280,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SproutPlant
       objectReference: {fileID: 0}
+    - target: {fileID: 8199891988222124826, guid: e528204069fb942409ca9ed1ac3633ea,
+        type: 3}
+      propertyPath: m_TagString
+      value: TAV
+      objectReference: {fileID: 0}
     - target: {fileID: 8199891988222124838, guid: e528204069fb942409ca9ed1ac3633ea,
         type: 3}
       propertyPath: m_RootOrder
@@ -354,6 +364,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5401856241814019718, guid: e3760fe3acbe74eff989ca09effc2ed4,
+        type: 3}
+      propertyPath: m_TagString
+      value: TAV
       objectReference: {fileID: 0}
     - target: {fileID: 5401856241814019770, guid: e3760fe3acbe74eff989ca09effc2ed4,
         type: 3}
