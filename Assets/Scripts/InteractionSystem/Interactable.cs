@@ -9,6 +9,7 @@ public class Interactable : MonoBehaviour
     public UnityEvent<CharacterController> OnInteract;
     public GameObject HighlightTarget;
     public Vector3 IndicatorOffset;
+    public AudioSource PickUpChime;
 
     private int _startLayer;
     private int _outlineLayer;
@@ -29,6 +30,11 @@ public class Interactable : MonoBehaviour
 
     public void Interact(CharacterController controller)
     {
+        if (PickUpChime != null)
+        {
+            PickUpChime.Play();
+        }
+        
         OnInteract.Invoke(controller);
     }
 

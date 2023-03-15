@@ -679,6 +679,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1307491979195138040, guid: 6a3457d90896abd4ba53cb075676a729,
         type: 3}
+      propertyPath: PickUpSource
+      value: 
+      objectReference: {fileID: 1881662736119728234}
+    - target: {fileID: 1307491979195138040, guid: 6a3457d90896abd4ba53cb075676a729,
+        type: 3}
+      propertyPath: DropItemSource
+      value: 
+      objectReference: {fileID: 2361155979000661749}
+    - target: {fileID: 1307491979195138040, guid: 6a3457d90896abd4ba53cb075676a729,
+        type: 3}
       propertyPath: GrabForwardOffset
       value: 1.7
       objectReference: {fileID: 0}
@@ -690,7 +700,7 @@ PrefabInstance:
     - target: {fileID: 1541125750292758979, guid: 6a3457d90896abd4ba53cb075676a729,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.545
+      value: 5.8849998
       objectReference: {fileID: 0}
     - target: {fileID: 1541125750292758979, guid: 6a3457d90896abd4ba53cb075676a729,
         type: 3}
