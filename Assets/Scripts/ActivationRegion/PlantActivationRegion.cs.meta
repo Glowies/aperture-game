@@ -3,7 +3,13 @@ guid: b1fe0bca62c4e4f41b089245a7dc3b5b
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - currentPlant: {instanceID: 0}
+  - sfx1: {instanceID: 0}
+  - sfx2: {instanceID: 0}
+  - sfx_plant_glow_loop: {fileID: 8300000, guid: b1f76aa4d002f3b4bb50ee31023bbcf2,
+      type: 3}
+  - sfx_plant_sparkle: {fileID: 8300000, guid: c3f9f629511a4524795def245f6857ba, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
