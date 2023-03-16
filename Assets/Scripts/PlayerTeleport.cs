@@ -16,7 +16,6 @@ public class PlayerTeleport : MonoBehaviour
     [SerializeField] ApertureAnimator apertureAnimator;
     [SerializeField] TextMeshProUGUI timeText;
     [SerializeField] GameObject PastVolume;
-    public AudioSource CameraShutter;
 
     private CharacterController controller;
 
@@ -40,7 +39,6 @@ public class PlayerTeleport : MonoBehaviour
         // Play aperture animation
         if(apertureAnimator != null)
         {
-            CameraShutter.Play();
             apertureAnimator.ShutterDuration = waitTime + 0.1f;
             apertureAnimator.ClosedPauseDuration = .8f;
             apertureAnimator.PlayShutterAnimation();
