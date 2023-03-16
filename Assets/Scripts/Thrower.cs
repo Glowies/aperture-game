@@ -10,6 +10,8 @@ public class Thrower : MonoBehaviour
     public float GrabMargin = 0.2f;
     public float GrabForwardOffset = 1f;
     public float ThrowForce = 4f;
+    public AudioSource PickUpSource;
+    public AudioSource DropItemSource;
 
     private CharacterController _characterController;
 
@@ -45,7 +47,10 @@ public class Thrower : MonoBehaviour
         {
             return;
         }
-
+        
+        // Play the pick-up sound
+        PickUpSource.Play();
+        
         // This function is triggered by Throwable script when throwable object is
         // interacted with 
         // assign grabbed object to GrabbedThrowable variable on grab
@@ -63,6 +68,9 @@ public class Thrower : MonoBehaviour
         var throwDireciton = transform.forward + transform.up * -8;
         throwDireciton.Normalize();
 
+        // Play the drop item sound
+        DropItemSource.Play();
+        
         IsGrabbing = false;
         GrabbedThrowable.Throw(throwDireciton * ThrowForce);
         GrabbedThrowable = null;
