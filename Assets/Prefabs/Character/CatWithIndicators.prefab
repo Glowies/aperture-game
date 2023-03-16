@@ -672,6 +672,11 @@ PrefabInstance:
       propertyPath: IgnoreTag
       value: TAV
       objectReference: {fileID: 0}
+    - target: {fileID: 745878468061068940, guid: 6a3457d90896abd4ba53cb075676a729,
+        type: 3}
+      propertyPath: CameraDistance
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 1307491979195138040, guid: 6a3457d90896abd4ba53cb075676a729,
         type: 3}
       propertyPath: GrabMargin
@@ -695,32 +700,37 @@ PrefabInstance:
     - target: {fileID: 1541125750292758979, guid: 6a3457d90896abd4ba53cb075676a729,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 19.7
+      value: -3.275383
       objectReference: {fileID: 0}
     - target: {fileID: 1541125750292758979, guid: 6a3457d90896abd4ba53cb075676a729,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.4616952
+      value: 3.2087767
       objectReference: {fileID: 0}
     - target: {fileID: 1541125750292758979, guid: 6a3457d90896abd4ba53cb075676a729,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 5.009342
+      value: 18.902664
       objectReference: {fileID: 0}
     - target: {fileID: 1541125750292758979, guid: 6a3457d90896abd4ba53cb075676a729,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.72439384
       objectReference: {fileID: 0}
     - target: {fileID: 1541125750292758979, guid: 6a3457d90896abd4ba53cb075676a729,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0.010014637
       objectReference: {fileID: 0}
     - target: {fileID: 1541125750292758979, guid: 6a3457d90896abd4ba53cb075676a729,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0.6892478
+      objectReference: {fileID: 0}
+    - target: {fileID: 1541125750292758979, guid: 6a3457d90896abd4ba53cb075676a729,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.009528749
       objectReference: {fileID: 0}
     - target: {fileID: 3253058046710805906, guid: 6a3457d90896abd4ba53cb075676a729,
         type: 3}
@@ -850,7 +860,7 @@ PrefabInstance:
     - target: {fileID: 8502480328221158124, guid: 6a3457d90896abd4ba53cb075676a729,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 5.009342
+      value: -4.700001
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6a3457d90896abd4ba53cb075676a729, type: 3}
