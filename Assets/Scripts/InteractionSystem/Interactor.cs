@@ -12,6 +12,8 @@ public class Interactor : MonoBehaviour
     private Interactable _targetInteractable;
     private CharacterController _characterController;
 
+    public AudioSource PickUpSource;
+    
     void Awake()
     {
         TryGetComponent(out _controller);
@@ -101,6 +103,8 @@ public class Interactor : MonoBehaviour
             return;
         }
 
+        PickUpSource.Play();
+        
         _targetInteractable.Interact(_controller);
     }
 
