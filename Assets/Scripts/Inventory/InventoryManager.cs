@@ -6,6 +6,9 @@ using TMPro;
 
 public class InventoryManager : MonoBehaviour
 {
+    // Photo Counter
+    public int NumberofPhotos {get; private set;}
+    [SerializeField] TextMeshProUGUI photoCountUI;
     //Make an array of inventory slots
     [SerializeField] InventorySlot[] invSlots;
 
@@ -84,15 +87,9 @@ public class InventoryManager : MonoBehaviour
         return increasedAmount;
     }
 
-    // // Start is called before the first frame update
-    // void Start()
-    // {
-        
-    // }
-
-    // // Update is called once per frame
-    // void Update()
-    // {}
-        
-    // }
+    public void PhotoPickedUp()
+    {
+        NumberofPhotos++;
+        photoCountUI.text = NumberofPhotos.ToString();
+    }
 }

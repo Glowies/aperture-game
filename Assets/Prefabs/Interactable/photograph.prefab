@@ -336,6 +336,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8995223356804971481}
+  - component: {fileID: 4815150240950864589}
   m_Layer: 0
   m_Name: photograph
   m_TagString: Untagged
@@ -361,6 +362,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -148.386, z: 0}
+--- !u!114 &4815150240950864589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8619506332553732451}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9196c204206ec4defb90315e6a1d903e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &7037907655474690259
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -466,7 +479,7 @@ PrefabInstance:
     - target: {fileID: 3769870292733660721, guid: 8cf1533b8ba9542688362da74ffb529a,
         type: 3}
       propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 6
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3769870292733660721, guid: 8cf1533b8ba9542688362da74ffb529a,
         type: 3}
@@ -477,7 +490,7 @@ PrefabInstance:
         type: 3}
       propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 7395729633166718034}
+      objectReference: {fileID: 4815150240950864589}
     - target: {fileID: 3769870292733660721, guid: 8cf1533b8ba9542688362da74ffb529a,
         type: 3}
       propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[1].m_Target
@@ -491,7 +504,7 @@ PrefabInstance:
     - target: {fileID: 3769870292733660721, guid: 8cf1533b8ba9542688362da74ffb529a,
         type: 3}
       propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: SetActive
+      value: PickupInteraction
       objectReference: {fileID: 0}
     - target: {fileID: 3769870292733660721, guid: 8cf1533b8ba9542688362da74ffb529a,
         type: 3}
@@ -501,7 +514,7 @@ PrefabInstance:
     - target: {fileID: 3769870292733660721, guid: 8cf1533b8ba9542688362da74ffb529a,
         type: 3}
       propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: UnityEngine.GameObject, UnityEngine
+      value: PhotoPickup, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 3769870292733660721, guid: 8cf1533b8ba9542688362da74ffb529a,
         type: 3}
