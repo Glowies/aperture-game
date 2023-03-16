@@ -490,7 +490,7 @@ PrefabInstance:
         type: 3}
       propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 7395729633166718034}
+      objectReference: {fileID: 4815150240950864589}
     - target: {fileID: 3769870292733660721, guid: 8cf1533b8ba9542688362da74ffb529a,
         type: 3}
       propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[1].m_Target
