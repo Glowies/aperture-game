@@ -33656,86 +33656,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 849109326}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &849901795
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1459604070}
-    m_Modifications:
-    - target: {fileID: 4335674407228692512, guid: af1de77477b0c4e6ca95a5dbd1ac0c74,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4335674407228692512, guid: af1de77477b0c4e6ca95a5dbd1ac0c74,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.11965922
-      objectReference: {fileID: 0}
-    - target: {fileID: 4335674407228692512, guid: af1de77477b0c4e6ca95a5dbd1ac0c74,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -7.377388
-      objectReference: {fileID: 0}
-    - target: {fileID: 4335674407228692512, guid: af1de77477b0c4e6ca95a5dbd1ac0c74,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.15999673
-      objectReference: {fileID: 0}
-    - target: {fileID: 4335674407228692512, guid: af1de77477b0c4e6ca95a5dbd1ac0c74,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.0715714
-      objectReference: {fileID: 0}
-    - target: {fileID: 4335674407228692512, guid: af1de77477b0c4e6ca95a5dbd1ac0c74,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4335674407228692512, guid: af1de77477b0c4e6ca95a5dbd1ac0c74,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4335674407228692512, guid: af1de77477b0c4e6ca95a5dbd1ac0c74,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4335674407228692512, guid: af1de77477b0c4e6ca95a5dbd1ac0c74,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4335674407228692512, guid: af1de77477b0c4e6ca95a5dbd1ac0c74,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: 4335674407228692512, guid: af1de77477b0c4e6ca95a5dbd1ac0c74,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4335674407228692512, guid: af1de77477b0c4e6ca95a5dbd1ac0c74,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: 4335674407228692513, guid: af1de77477b0c4e6ca95a5dbd1ac0c74,
-        type: 3}
-      propertyPath: m_Name
-      value: Wires (7)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: af1de77477b0c4e6ca95a5dbd1ac0c74, type: 3}
---- !u!4 &849901796 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4335674407228692512, guid: af1de77477b0c4e6ca95a5dbd1ac0c74,
-    type: 3}
-  m_PrefabInstance: {fileID: 849901795}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &851392400
 GameObject:
   m_ObjectHideFlags: 0
@@ -50960,7 +50880,7 @@ PrefabInstance:
     - target: {fileID: 4335674407228692512, guid: af1de77477b0c4e6ca95a5dbd1ac0c74,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4335674407228692512, guid: af1de77477b0c4e6ca95a5dbd1ac0c74,
         type: 3}
@@ -52467,7 +52387,6 @@ Transform:
   m_Children:
   - {fileID: 687730220}
   - {fileID: 228888264}
-  - {fileID: 849901796}
   - {fileID: 1394311448}
   m_Father: {fileID: 1332270793}
   m_RootOrder: 0
@@ -54739,9 +54658,9 @@ Transform:
   - {fileID: 1312164372}
   - {fileID: 151979920}
   - {fileID: 492780906}
+  - {fileID: 1537863073}
   - {fileID: 1347688708}
   - {fileID: 549643281}
-  - {fileID: 1537863073}
   - {fileID: 1484957833}
   m_Father: {fileID: 1164515311}
   m_RootOrder: 70
