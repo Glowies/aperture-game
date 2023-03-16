@@ -11,10 +11,10 @@ public class PhotoPickup : MonoBehaviour
         {
             return;
         }
-        
+
         // add 1 to the player inventory photo count
         inventoryManager.PhotoPickedUp();
         // Destroy on pickup
-        Destroy(gameObject);
+        // Destroy(gameObject); 
     }
 }

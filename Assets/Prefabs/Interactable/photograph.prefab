@@ -374,6 +374,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9196c204206ec4defb90315e6a1d903e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PickUpChime: {fileID: 1182483868889910921}
 --- !u!1001 &7037907655474690259
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -474,12 +475,12 @@ PrefabInstance:
     - target: {fileID: 3769870292733660721, guid: 8cf1533b8ba9542688362da74ffb529a,
         type: 3}
       propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3769870292733660721, guid: 8cf1533b8ba9542688362da74ffb529a,
         type: 3}
       propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 0
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3769870292733660721, guid: 8cf1533b8ba9542688362da74ffb529a,
         type: 3}
@@ -488,9 +489,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3769870292733660721, guid: 8cf1533b8ba9542688362da74ffb529a,
         type: 3}
+      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3769870292733660721, guid: 8cf1533b8ba9542688362da74ffb529a,
+        type: 3}
       propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 4815150240950864589}
+      objectReference: {fileID: 7395729633166718034}
     - target: {fileID: 3769870292733660721, guid: 8cf1533b8ba9542688362da74ffb529a,
         type: 3}
       propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[1].m_Target
@@ -498,13 +504,23 @@ PrefabInstance:
       objectReference: {fileID: 3513219296216213457}
     - target: {fileID: 3769870292733660721, guid: 8cf1533b8ba9542688362da74ffb529a,
         type: 3}
+      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 4815150240950864589}
+    - target: {fileID: 3769870292733660721, guid: 8cf1533b8ba9542688362da74ffb529a,
+        type: 3}
       propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3769870292733660721, guid: 8cf1533b8ba9542688362da74ffb529a,
         type: 3}
+      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3769870292733660721, guid: 8cf1533b8ba9542688362da74ffb529a,
+        type: 3}
       propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: PickupInteraction
+      value: SetActive
       objectReference: {fileID: 0}
     - target: {fileID: 3769870292733660721, guid: 8cf1533b8ba9542688362da74ffb529a,
         type: 3}
@@ -513,13 +529,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3769870292733660721, guid: 8cf1533b8ba9542688362da74ffb529a,
         type: 3}
+      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: PickupInteraction
+      objectReference: {fileID: 0}
+    - target: {fileID: 3769870292733660721, guid: 8cf1533b8ba9542688362da74ffb529a,
+        type: 3}
       propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: PhotoPickup, Assembly-CSharp
+      value: UnityEngine.GameObject, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 3769870292733660721, guid: 8cf1533b8ba9542688362da74ffb529a,
         type: 3}
       propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
       value: UnityEngine.GameObject, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3769870292733660721, guid: 8cf1533b8ba9542688362da74ffb529a,
+        type: 3}
+      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: PhotoPickup, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 3769870292733660721, guid: 8cf1533b8ba9542688362da74ffb529a,
         type: 3}
@@ -533,7 +559,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3769870292733660721, guid: 8cf1533b8ba9542688362da74ffb529a,
         type: 3}
+      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3769870292733660721, guid: 8cf1533b8ba9542688362da74ffb529a,
+        type: 3}
       propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3769870292733660721, guid: 8cf1533b8ba9542688362da74ffb529a,
+        type: 3}
+      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 5866745485042245378, guid: 8cf1533b8ba9542688362da74ffb529a,
