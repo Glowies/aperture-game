@@ -878,7 +878,7 @@ PrefabInstance:
     - target: {fileID: 6057224565380790479, guid: 6a3457d90896abd4ba53cb075676a729,
         type: 3}
       propertyPath: MoveSpeed
-      value: 10
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 6057224565380790479, guid: 6a3457d90896abd4ba53cb075676a729,
         type: 3}
@@ -908,27 +908,47 @@ PrefabInstance:
     - target: {fileID: 6864687644676907646, guid: 6a3457d90896abd4ba53cb075676a729,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 19.7
+      value: -1.99
+      objectReference: {fileID: 0}
+    - target: {fileID: 6864687644676907646, guid: 6a3457d90896abd4ba53cb075676a729,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 6864687644676907646, guid: 6a3457d90896abd4ba53cb075676a729,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 5.3
+      value: -12.89
+      objectReference: {fileID: 0}
+    - target: {fileID: 6864687644676907646, guid: 6a3457d90896abd4ba53cb075676a729,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6864687644676907646, guid: 6a3457d90896abd4ba53cb075676a729,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6864687644676907646, guid: 6a3457d90896abd4ba53cb075676a729,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8502480328221158124, guid: 6a3457d90896abd4ba53cb075676a729,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 19.7
+      value: -1.9899998
       objectReference: {fileID: 0}
     - target: {fileID: 8502480328221158124, guid: 6a3457d90896abd4ba53cb075676a729,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.45366395
+      value: 2.6750002
       objectReference: {fileID: 0}
     - target: {fileID: 8502480328221158124, guid: 6a3457d90896abd4ba53cb075676a729,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 5.008129
+      value: -22.89
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6a3457d90896abd4ba53cb075676a729, type: 3}
@@ -944,40 +964,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 5496950232711322178}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2572875280428070796
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1749229242811998854}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 04b7a900714995745a88a65d75023a2e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  photoCountUI: {fileID: 1783805550696838434}
-  invSlots:
-  - itemType: 0
-    itemImage: {fileID: 0}
-    itemAmount: 0
-  - itemType: 1
-    itemImage: {fileID: 0}
-    itemAmount: 0
-  keyCountUI:
-  - {fileID: 5218692928904968702}
-  - {fileID: 6845270342923137910}
-  imageArray:
-  - {fileID: 5218692928212265653}
-  - {fileID: 6845270342288891965}
---- !u!81 &2008832466819208493
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1749229242811998854}
-  m_Enabled: 1
 --- !u!82 &2471434469452762288
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1074,6 +1060,40 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!81 &7012862832473738305
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1749229242811998854}
+  m_Enabled: 1
+--- !u!114 &2572875280428070796
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1749229242811998854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04b7a900714995745a88a65d75023a2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  photoCountUI: {fileID: 1783805550696838434}
+  invSlots:
+  - itemType: 0
+    itemImage: {fileID: 0}
+    itemAmount: 0
+  - itemType: 1
+    itemImage: {fileID: 0}
+    itemAmount: 0
+  keyCountUI:
+  - {fileID: 5218692928904968702}
+  - {fileID: 6845270342923137910}
+  imageArray:
+  - {fileID: 5218692928212265653}
+  - {fileID: 6845270342288891965}
 --- !u!1001 &7905929082816537868
 PrefabInstance:
   m_ObjectHideFlags: 0
