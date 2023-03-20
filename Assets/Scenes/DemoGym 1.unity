@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028338, g: 0.22571345, b: 0.30692208, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028305, g: 0.22571313, b: 0.3069213, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -570,8 +570,43 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6425012314657397633, guid: a78c13db4c93a4b249b1cc719f4e8021,
         type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 19.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6425012314657397633, guid: a78c13db4c93a4b249b1cc719f4e8021,
+        type: 3}
       propertyPath: m_LocalPosition.y
       value: 5.8849998
+      objectReference: {fileID: 0}
+    - target: {fileID: 6425012314657397633, guid: a78c13db4c93a4b249b1cc719f4e8021,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.7000008
+      objectReference: {fileID: 0}
+    - target: {fileID: 6803868231923361210, guid: a78c13db4c93a4b249b1cc719f4e8021,
+        type: 3}
+      propertyPath: IsGrabbing
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6803868231923361210, guid: a78c13db4c93a4b249b1cc719f4e8021,
+        type: 3}
+      propertyPath: AudioSource
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6803868231923361210, guid: a78c13db4c93a4b249b1cc719f4e8021,
+        type: 3}
+      propertyPath: PickUpSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 2d1c86b43e2364b4a8722555e1077ac6, type: 3}
+    - target: {fileID: 6803868231923361210, guid: a78c13db4c93a4b249b1cc719f4e8021,
+        type: 3}
+      propertyPath: PickUpSource
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6803868231923361210, guid: a78c13db4c93a4b249b1cc719f4e8021,
+        type: 3}
+      propertyPath: DropItemSource
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 8276439791813517050, guid: a78c13db4c93a4b249b1cc719f4e8021,
         type: 3}
@@ -2237,7 +2272,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04b7a900714995745a88a65d75023a2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  photoCountUI: {fileID: 0}
   invSlots:
   - itemType: 0
     itemImage: {fileID: 21300000, guid: cadb12f85b7874686ba8c13a9382539e, type: 3}
