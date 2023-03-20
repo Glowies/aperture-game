@@ -36,8 +36,12 @@ public class PlantActivationRegion : MonoBehaviour
         hasPlant = true;
         // set the currentPlant plant object
         currentPlant = plant;
-        plant.ToggleDeadPlant(false);
-        plant.TogglePastPlantMesh(false);
+        // teleport plant that collided to center of prefab by getting position of plant activation region
+        Vector3 position = transform.position;
+        currentPlant.transform.position = position;
+        //Set plant TAv mesh to disabled, enable the dead plant in teh future 
+        currentPlant.ToggleDeadPlant(false);
+        currentPlant.TogglePastPlantMesh(false);
 
         OnEnter.Invoke();
 
@@ -67,8 +71,8 @@ public class PlantActivationRegion : MonoBehaviour
             return;
         }
         
-        plant.ToggleDeadPlant(true);
-        plant.TogglePastPlantMesh(true);
+        currentPlant.ToggleDeadPlant(true);
+        currentPlant.TogglePastPlantMesh(true);
 
         hasPlant = false;
         currentPlant = null;
