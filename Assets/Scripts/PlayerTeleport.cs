@@ -91,6 +91,10 @@ public class PlayerTeleport : MonoBehaviour
     {
         if (isTransitioning){return;}
         // check if player is grabbing an object, if so, do not teleport
+        ThirdPersonController third_person = gameObject.GetComponent<ThirdPersonController>();
+        if (!third_person.Grounded){ 
+            Debug.Log("Cannot teleport in air");
+            return;}
         thrower = gameObject.GetComponent<Thrower>();
         if (thrower.IsGrabbing){
             Debug.Log("Cannot teleport while holding object");
