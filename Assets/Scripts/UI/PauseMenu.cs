@@ -24,25 +24,38 @@ public class PauseMenu : MonoBehaviour
     private void Pause(){
         gameUI.SetActive(false);
         pauseMenuUI.SetActive(true);
+        //disable the controller so you cannot move player or controller when paused
+        gameObject.GetComponent<ThirdPersonController>().enabled = false;
+        //stop time in game
         Time.timeScale = 0f;
         isPaused = true;
+        //unlock cursor so it is unconfined and make cursor visible, from gamedev.tv course
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
 
     }
 
     public void Resume(){
-        Debug.Log("resume");
         pauseMenuUI.SetActive(false);
         gameUI.SetActive(true);
+        //enable controls for third person controller
+        gameObject.GetComponent<ThirdPersonController>().enabled = true;
+        //resume time in game
         Time.timeScale = 1f;
         isPaused = false;
+        // make cursur invisible and re confine to center of screen
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
     public void LoadControls(){
-        Debug.Log("Loading Controls Menu");
+        //set pause menu to false and enable controls canvas
         pauseMenuUI.SetActive(false);
         controlsMenuUI.SetActive(true);
     }
     public void LoadPause(){
+        //disable controls canvas and restore pause menu
+        controlsMenuUI.SetActive(false);
         pauseMenuUI.SetActive(true);
     }
     public void Quit(){

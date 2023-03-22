@@ -72,6 +72,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CatWithIndicators
       objectReference: {fileID: 0}
+    - target: {fileID: 4413415111366680198, guid: 6a3457d90896abd4ba53cb075676a729,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4963056465618323476, guid: 6a3457d90896abd4ba53cb075676a729,
         type: 3}
       propertyPath: m_RootOrder
@@ -125,6 +130,11 @@ PrefabInstance:
     - target: {fileID: 4963056465618323476, guid: 6a3457d90896abd4ba53cb075676a729,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7063098058376723661, guid: 6a3457d90896abd4ba53cb075676a729,
+        type: 3}
+      propertyPath: m_SortingOrder
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8022222484138067985, guid: 6a3457d90896abd4ba53cb075676a729,
