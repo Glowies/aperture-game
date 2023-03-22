@@ -90,6 +90,7 @@ public class PlayerTeleport : MonoBehaviour
     void OnTeleport()
     {
         if (isTransitioning){return;}
+        if (PauseMenu.isPaused){return;} //if game paused, do not teleport
         // check if player is grabbing an object, if so, do not teleport
         ThirdPersonController third_person = gameObject.GetComponent<ThirdPersonController>();
         if (!third_person.Grounded){ 

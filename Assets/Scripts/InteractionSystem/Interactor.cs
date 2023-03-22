@@ -102,6 +102,7 @@ public class Interactor : MonoBehaviour
         {
             return;
         }
+        if (PauseMenu.isPaused){return;} //if game paused, do not interact
 
         PickUpSource.Play();
         
