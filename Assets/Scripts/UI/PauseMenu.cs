@@ -21,7 +21,7 @@ public class PauseMenu : MonoBehaviour
         }
 
     }
-    private void Pause(){
+    public void Pause(){
         gameUI.SetActive(false);
         pauseMenuUI.SetActive(true);
         //disable the controller so you cannot move player or controller when paused
@@ -33,6 +33,10 @@ public class PauseMenu : MonoBehaviour
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
 
+    }
+
+    public void SetPauseMenu(GameObject menu){
+        pauseMenuUI = menu;
     }
 
     public void Resume(){

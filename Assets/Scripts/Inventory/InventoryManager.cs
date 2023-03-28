@@ -8,9 +8,12 @@ public class InventoryManager : MonoBehaviour
 {
     // Photo Counter
     public int NumberofPhotos {get; private set;}
+    [SerializeField] int numComplete;
     [SerializeField] TextMeshProUGUI photoCountUI;
     //Make an array of inventory slots
     [SerializeField] InventorySlot[] invSlots;
+
+    public GameObject levelCompleteUI;
 
     // make a class for the inventory slot, make it System.Serializable so we can see it in Inspector
     [System.Serializable]
@@ -91,5 +94,11 @@ public class InventoryManager : MonoBehaviour
     {
         NumberofPhotos++;
         photoCountUI.text = NumberofPhotos.ToString();
+        if (NumberofPhotos == numComplete){
+            //set the pause menu to the level complete menu and pause
+            PauseMenu pause = gameObject.GetComponent<PauseMenu>();
+            pause.SetPauseMenu(levelCompleteUI);
+            pause.Pause();
+        }
     }
 }
