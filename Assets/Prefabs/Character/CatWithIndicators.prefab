@@ -257,10 +257,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7492270706284310521}
-        m_TargetAssemblyTypeName: SceneLoader, Assembly-CSharp
-        m_MethodName: LoadScene
-        m_Mode: 5
+      - m_Target: {fileID: 1164681792683522043}
+        m_TargetAssemblyTypeName: SceneLoad, Assembly-CSharp
+        m_MethodName: TriggerLoadNextLevel
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -358,7 +358,6 @@ GameObject:
   - component: {fileID: 1053396412426923272}
   - component: {fileID: 2409578125851339422}
   - component: {fileID: 350069236819580771}
-  - component: {fileID: 7492270706284310521}
   m_Layer: 5
   m_Name: LevelCompleteCanvas
   m_TagString: Untagged
@@ -449,20 +448,6 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &7492270706284310521
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8217127616389026851}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: febc322cea66a402a8e49991af6e8513, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _loadingCanvas: {fileID: 0}
-  _loadingImage: {fileID: 0}
 --- !u!1 &8447712018932866565
 GameObject:
   m_ObjectHideFlags: 0
@@ -668,17 +653,17 @@ PrefabInstance:
     - target: {fileID: 1541125750292758979, guid: 6a3457d90896abd4ba53cb075676a729,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.199999
+      value: -5.795395
       objectReference: {fileID: 0}
     - target: {fileID: 1541125750292758979, guid: 6a3457d90896abd4ba53cb075676a729,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.595
+      value: 2.595001
       objectReference: {fileID: 0}
     - target: {fileID: 1541125750292758979, guid: 6a3457d90896abd4ba53cb075676a729,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -11.734653
+      value: -23.942196
       objectReference: {fileID: 0}
     - target: {fileID: 1541125750292758979, guid: 6a3457d90896abd4ba53cb075676a729,
         type: 3}
@@ -778,7 +763,7 @@ PrefabInstance:
     - target: {fileID: 8502480328221158124, guid: 6a3457d90896abd4ba53cb075676a729,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -22.89
+      value: -13.752132
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6a3457d90896abd4ba53cb075676a729, type: 3}
@@ -788,6 +773,25 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 5496950232711322178}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1749229242811998854 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6057224565380790468, guid: 6a3457d90896abd4ba53cb075676a729,
+    type: 3}
+  m_PrefabInstance: {fileID: 5496950232711322178}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1164681792683522043
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1749229242811998854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 049487d0bef69e546b5fea6eb107c445, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelLoadDelay: 0
 --- !u!1 &3591121600649920125 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9052003311627674687, guid: 6a3457d90896abd4ba53cb075676a729,

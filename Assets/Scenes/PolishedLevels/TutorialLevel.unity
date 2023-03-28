@@ -2843,6 +2843,26 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6195526710790862562, guid: 09c79cec4701a49f3b381d1782132d8c,
+        type: 3}
+      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6195526710790862562, guid: 09c79cec4701a49f3b381d1782132d8c,
+        type: 3}
+      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6195526710790862562, guid: 09c79cec4701a49f3b381d1782132d8c,
+        type: 3}
+      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6195526710790862562, guid: 09c79cec4701a49f3b381d1782132d8c,
+        type: 3}
+      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
+      value: PhotoPickup, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 7291134726656229704, guid: 09c79cec4701a49f3b381d1782132d8c,
         type: 3}
       propertyPath: m_StaticEditorFlags
@@ -4325,26 +4345,6 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4118457812527256609, guid: a78c13db4c93a4b249b1cc719f4e8021,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 290750267}
-    - target: {fileID: 4118457812527256609, guid: a78c13db4c93a4b249b1cc719f4e8021,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: LoadScene
-      objectReference: {fileID: 0}
-    - target: {fileID: 4118457812527256609, guid: a78c13db4c93a4b249b1cc719f4e8021,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: SceneLoadTrigger, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 4118457812527256609, guid: a78c13db4c93a4b249b1cc719f4e8021,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: Level2-Greenhouse
-      objectReference: {fileID: 0}
     - target: {fileID: 4159065269355688110, guid: a78c13db4c93a4b249b1cc719f4e8021,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4460,6 +4460,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 28f0f6ed76037424b88ee8d35ee3bf9c, type: 2}
+    - target: {fileID: 8069790220847820238, guid: a78c13db4c93a4b249b1cc719f4e8021,
+        type: 3}
+      propertyPath: numComplete
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 8276439791813517050, guid: a78c13db4c93a4b249b1cc719f4e8021,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -4503,24 +4508,6 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 7492270706284310521, guid: a78c13db4c93a4b249b1cc719f4e8021, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: a78c13db4c93a4b249b1cc719f4e8021, type: 3}
---- !u!1 &290750266 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8217127616389026851, guid: a78c13db4c93a4b249b1cc719f4e8021,
-    type: 3}
-  m_PrefabInstance: {fileID: 290750265}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &290750267
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 290750266}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7e80fc52d4ffa49989fb81a9ad42d68c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &292333166
 GameObject:
   m_ObjectHideFlags: 0
