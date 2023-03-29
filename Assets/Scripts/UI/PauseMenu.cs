@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine.InputSystem;
 using StarterAssets;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour
 {
@@ -63,7 +64,10 @@ public class PauseMenu : MonoBehaviour
         pauseMenuUI.SetActive(true);
     }
     public void Quit(){
-        Application.Quit();
+        // use 3 to load the level select screen 
+        Time.timeScale = 1f;
+        isPaused = false;
+        SceneManager.LoadScene(3);
     }
     // // Start is called before the first frame update
     // void Start()
