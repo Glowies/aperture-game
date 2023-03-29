@@ -2,6 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Cinemachine;
+using System;
+
+class NameComparer : IComparer<GameObject>
+{
+    public int Compare(GameObject x, GameObject y)
+    {
+        return x.name.CompareTo(y.name);
+    }
+}
 
 [RequireComponent(typeof(CinemachineBrain))]
 public class GoalCameraSequencer : MonoBehaviour
@@ -15,6 +24,7 @@ public class GoalCameraSequencer : MonoBehaviour
     void Awake()
     {
         _goalCameras = GameObject.FindGameObjectsWithTag("GoalCamera");
+        Array.Sort(_goalCameras, new NameComparer());
         TryGetComponent(out _cinemachineBrain);
         ToggleGoalCameras(false);
     }
