@@ -90,6 +90,11 @@ public class PlayerTeleport : MonoBehaviour
     void OnTeleport()
     {
         if (isTransitioning){return;}
+        // get the inteeracctor component that is on player. If too close to plant or door, disable teleport
+        Interactor interactor = gameObject.GetComponent<Interactor>();
+        if (interactor.tooClose){
+            Debug.Log("Too close to object");
+            return;} //cannot teleport in range of interactable
         if (PauseMenu.isPaused){return;} //if game paused, do not teleport
         // check if player is grabbing an object, if so, do not teleport
         ThirdPersonController third_person = gameObject.GetComponent<ThirdPersonController>();
