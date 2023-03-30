@@ -7,6 +7,7 @@ public class Interactor : MonoBehaviour
 {
     public RectTransform InteractIndicator;
 
+    public bool tooClose = false;
     private CharacterController _controller;
     private List<Interactable> _closeInteractables;
     private Interactable _targetInteractable;
@@ -68,6 +69,8 @@ public class Interactor : MonoBehaviour
         {
             prevTarget?.ToggleHighlight(false);
             _targetInteractable = null;
+            // set tooClose to false if not in range of interactable (targetInteractable is null)
+            tooClose = false;
             return;
         }
 
@@ -85,6 +88,11 @@ public class Interactor : MonoBehaviour
             {
                 minDistance = currDistance;
                 _targetInteractable = interactable;
+                //if the target interactable has a parent with Plant or DoorRegion script component, tooClose = true
+                if (_targetInteractable.transform.parent.TryGetComponent(out Plant plant) || _targetInteractable.transform.parent.TryGetComponent(out DoorRegion door)){
+                    tooClose = true;
+                }
+                
             }
         }
 
@@ -102,6 +110,7 @@ public class Interactor : MonoBehaviour
         {
             return;
         }
+        if (PauseMenu.isPaused){return;} //if game paused, do not interact
 
         PickUpSource.Play();
         

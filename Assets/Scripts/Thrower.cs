@@ -65,6 +65,7 @@ public class Thrower : MonoBehaviour
     [ContextMenu("throw")]
     public void Throw()
     {
+        if (PauseMenu.isPaused){return;} //if game paused, do not throw
         var throwDireciton = transform.forward + transform.up * -8;
         throwDireciton.Normalize();
 
