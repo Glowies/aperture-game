@@ -6,6 +6,7 @@ TagManager:
   tags:
   - CinemachineTarget
   - TAV
+  - GoalCamera
   layers:
   - Default
   - TransparentFX

@@ -768,17 +768,17 @@ PrefabInstance:
     - target: {fileID: 1541125750292758979, guid: 6a3457d90896abd4ba53cb075676a729,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.9899998
+      value: 5.2299995
       objectReference: {fileID: 0}
     - target: {fileID: 1541125750292758979, guid: 6a3457d90896abd4ba53cb075676a729,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.6750002
+      value: 2.595
       objectReference: {fileID: 0}
     - target: {fileID: 1541125750292758979, guid: 6a3457d90896abd4ba53cb075676a729,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -22.89
+      value: -11.540001
       objectReference: {fileID: 0}
     - target: {fileID: 1541125750292758979, guid: 6a3457d90896abd4ba53cb075676a729,
         type: 3}
@@ -950,7 +950,8 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -22.89
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1541125750292758981, guid: 6a3457d90896abd4ba53cb075676a729, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 6a3457d90896abd4ba53cb075676a729, type: 3}
 --- !u!4 &624107623521751638 stripped
 Transform:
@@ -1190,6 +1191,32 @@ MonoBehaviour:
   imageArray:
   - {fileID: 5218692928212265653}
   - {fileID: 6845270342288891965}
+--- !u!1 &4159065269355688273 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8502480328221158163, guid: 6a3457d90896abd4ba53cb075676a729,
+    type: 3}
+  m_PrefabInstance: {fileID: 5496950232711322178}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &6425012314657397636 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1541125750292758982, guid: 6a3457d90896abd4ba53cb075676a729,
+    type: 3}
+  m_PrefabInstance: {fileID: 5496950232711322178}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1678544088252884507
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6425012314657397636}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d755ff5935634a119815600e993c637, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlayerCamera: {fileID: 4159065269355688273}
+  TimeBetweenCameras: 1
 --- !u!1001 &7905929082816537868
 PrefabInstance:
   m_ObjectHideFlags: 0
