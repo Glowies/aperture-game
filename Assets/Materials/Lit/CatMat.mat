@@ -64,9 +64,9 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - Brightness_Rim: 2
-    - Rim_Power: 5
-    - Toon_Ramp_Offset: 0.5
+    - Brightness_Rim: 2.67
+    - Rim_Power: 5.78
+    - Toon_Ramp_Offset: 0.536
     - Toon_Ramp_Smoothness: 0
     - Vector1_1DEF9DF4: 20
     - Vector1_3C3B6420: -1
@@ -79,8 +79,8 @@ Material:
     - Color_9A9462B: {r: 0, g: 0, b: 0, a: 0}
     - Color_D2A04608: {r: 1, g: 1, b: 1, a: 0}
     - Color_D840FCE7: {r: 1, g: 1, b: 1, a: 0}
-    - Toon_Ramp_Tint: {r: 0.5188679, g: 0.42341578, b: 0.42341578, a: 1}
-    - _Color: {r: 0.121796004, g: 0.12884672, b: 0.21698111, a: 1}
+    - Toon_Ramp_Tint: {r: 0.3490566, g: 0.23544855, b: 0.23544855, a: 1}
+    - _Color: {r: 0.16665184, g: 0.17833306, b: 0.3301887, a: 1}
     - _L1_color: {r: 1, g: 1, b: 1, a: 1}
     - _L1_dir: {r: 0, g: 1, b: 0, a: 0}
     - _L2_color: {r: 0, g: 0, b: 0, a: 0}

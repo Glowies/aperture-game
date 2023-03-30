@@ -14,6 +14,13 @@ public class PlantActivationRegion : MonoBehaviour
     // the current plant object in the activation region
     public Plant currentPlant;
 
+    //plant audio
+    public AudioSource sfx1;
+    public AudioSource sfx2;
+    public AudioClip sfx_plant_glow_loop;
+    public AudioClip sfx_plant_sparkle;
+
+
     private void OnTriggerEnter(Collider other)
     {
         // Only register entry if it's a plant
@@ -29,10 +36,26 @@ public class PlantActivationRegion : MonoBehaviour
         hasPlant = true;
         // set the currentPlant plant object
         currentPlant = plant;
-        plant.ToggleDeadPlant(false);
-        plant.TogglePastPlantMesh(false);
+        // teleport plant that collided to center of prefab by getting position of plant activation region
+        Vector3 position = transform.position;
+        currentPlant.transform.position = position;
+        //Set plant TAv mesh to disabled, enable the dead plant in teh future 
+        currentPlant.ToggleDeadPlant(false);
+        currentPlant.TogglePastPlantMesh(false);
 
         OnEnter.Invoke();
+
+        //glow
+        sfx1.clip = sfx_plant_glow_loop;
+        sfx1.loop = true;
+        sfx1.Play();
+
+        //randomized sparkle
+        sfx2.clip = sfx_plant_sparkle;
+        sfx2.volume = 0.4f;
+        sfx2.loop = true;
+        sfx2.pitch = Random.Range(-10, 10);
+        sfx2.Play();
     }
 
     private void OnTriggerExit(Collider other)
@@ -48,8 +71,8 @@ public class PlantActivationRegion : MonoBehaviour
             return;
         }
         
-        plant.ToggleDeadPlant(true);
-        plant.TogglePastPlantMesh(true);
+        currentPlant.ToggleDeadPlant(true);
+        currentPlant.TogglePastPlantMesh(true);
 
         hasPlant = false;
         currentPlant = null;
