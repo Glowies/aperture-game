@@ -4534,7 +4534,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: 939a7dd754324444895f9ebc800b4f7f, type: 3}
+      objectReference: {fileID: 8300000, guid: 742632f3232764162a86d63c4ff46bfc, type: 3}
     - target: {fileID: 5218692930177680231, guid: a78c13db4c93a4b249b1cc719f4e8021,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -4659,7 +4659,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: 939a7dd754324444895f9ebc800b4f7f, type: 3}
+      objectReference: {fileID: 8300000, guid: 742632f3232764162a86d63c4ff46bfc, type: 3}
     - target: {fileID: 8069790220847820238, guid: a78c13db4c93a4b249b1cc719f4e8021,
         type: 3}
       propertyPath: numComplete
