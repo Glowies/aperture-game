@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/PolishedLevels/Main Menu.unity
+    guid: ebdee4bff21734ab093ed595865fa92d
+  - enabled: 1
     path: Assets/Scenes/_EntryScene.unity
     guid: fc634f1c9abf8444cb526fe3087deac8
   - enabled: 1
