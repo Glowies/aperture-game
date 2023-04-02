@@ -34306,6 +34306,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4534329154558151719, guid: a78c13db4c93a4b249b1cc719f4e8021,
         type: 3}
+      propertyPath: Loop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4534329154558151719, guid: a78c13db4c93a4b249b1cc719f4e8021,
+        type: 3}
       propertyPath: m_Volume
       value: 0.55
       objectReference: {fileID: 0}
@@ -34413,6 +34418,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7927843404189341426, guid: a78c13db4c93a4b249b1cc719f4e8021,
+        type: 3}
+      propertyPath: Loop
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7927843404189341426, guid: a78c13db4c93a4b249b1cc719f4e8021,
         type: 3}
