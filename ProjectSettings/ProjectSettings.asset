@@ -14,7 +14,7 @@ PlayerSettings:
   accelerometerFrequency: 60
   companyName: 4th Dimension Studio
   productName: aperture
-  defaultCursor: {fileID: 2800000, guid: 1bbc2d954de9e42efb37c3f32da80ec8, type: 3}
+  defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.20906019, g: 0.22468965, b: 0.509434, a: 1}
   m_ShowUnitySplashScreen: 1
