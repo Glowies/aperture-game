@@ -3,6 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
+public enum InteractionType
+{
+    Interact,
+    Grab
+}
+
 [RequireComponent(typeof(Collider))]
 public class Interactable : MonoBehaviour
 {
@@ -10,6 +16,7 @@ public class Interactable : MonoBehaviour
     public GameObject HighlightTarget;
     public Vector3 IndicatorOffset;
     public AudioSource PickUpChime;
+    public InteractionType Interaction;
 
     private int _startLayer;
     private int _outlineLayer;

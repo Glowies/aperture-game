@@ -159,6 +159,7 @@ MonoBehaviour:
   HighlightTarget: {fileID: 6907492498132686037}
   IndicatorOffset: {x: 0, y: 0, z: 0}
   PickUpChime: {fileID: 0}
+  Interaction: 1
 --- !u!1 &1610492365639280388
 GameObject:
   m_ObjectHideFlags: 0
