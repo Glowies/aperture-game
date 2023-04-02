@@ -14,10 +14,19 @@ public class Thrower : MonoBehaviour
     public AudioSource DropItemSource;
 
     private CharacterController _characterController;
+    private float _throwTimeout = 0;
 
     void Awake()
     {
         TryGetComponent(out _characterController);
+    }
+
+    void Update()
+    {
+        if(_throwTimeout < 0)
+        {
+            _throwTimeout += Time.deltaTime;
+        }
     }
 
     void LateUpdate()
@@ -47,6 +56,7 @@ public class Thrower : MonoBehaviour
         {
             return;
         }
+        _throwTimeout = -0.1f;
         
         // Play the pick-up sound
         PickUpSource.Play();
@@ -65,7 +75,9 @@ public class Thrower : MonoBehaviour
     [ContextMenu("throw")]
     public void Throw()
     {
-        if (PauseMenu.isPaused){return;} //if game paused, do not throw
+        if (PauseMenu.isPaused) {return;} //if game paused, do not throw
+        if (GrabbedThrowable == null) {return;}
+        if (_throwTimeout < 0) {return;}
         var throwDireciton = transform.forward + transform.up * -8;
         throwDireciton.Normalize();
 

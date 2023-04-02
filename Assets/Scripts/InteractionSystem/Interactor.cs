@@ -12,6 +12,7 @@ public class Interactor : MonoBehaviour
     private List<Interactable> _closeInteractables;
     private Interactable _targetInteractable;
     private CharacterController _characterController;
+    private InteractIndicatorSwapper _indicatorSwapper;
 
     public AudioSource PickUpSource;
     
@@ -19,6 +20,7 @@ public class Interactor : MonoBehaviour
     {
         TryGetComponent(out _controller);
         TryGetComponent(out _characterController);
+        InteractIndicator.TryGetComponent(out _indicatorSwapper);
         _closeInteractables = new();
         _targetInteractable = null;
     }
@@ -104,9 +106,14 @@ public class Interactor : MonoBehaviour
         }
     }
 
-    public void OnInteract()
+    void OnThrow() => TriggerInteraction(InteractionType.Grab);
+
+    public void OnInteract() => TriggerInteraction(InteractionType.Interact);
+
+    public void TriggerInteraction(InteractionType interactionType)
     {
-        if(_targetInteractable == null)
+        if(_targetInteractable == null || 
+            _targetInteractable.Interaction != interactionType)
         {
             return;
         }
@@ -126,6 +133,7 @@ public class Interactor : MonoBehaviour
             var position = _targetInteractable.transform.position;
             position += _targetInteractable.IndicatorOffset;
             screenPosition = Camera.main.WorldToScreenPoint(position);
+            _indicatorSwapper.SwapToIndicator(_targetInteractable.Interaction);
         }
 
         InteractIndicator.position = screenPosition;
