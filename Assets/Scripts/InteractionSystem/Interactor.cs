@@ -104,9 +104,14 @@ public class Interactor : MonoBehaviour
         }
     }
 
-    public void OnInteract()
+    void OnThrow() => TriggerInteraction(InteractionType.Grab);
+
+    public void OnInteract() => TriggerInteraction(InteractionType.Interact);
+
+    public void TriggerInteraction(InteractionType interactionType)
     {
-        if(_targetInteractable == null)
+        if(_targetInteractable == null || 
+            _targetInteractable.Interaction != interactionType)
         {
             return;
         }
