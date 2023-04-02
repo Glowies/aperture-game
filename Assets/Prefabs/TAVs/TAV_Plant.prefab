@@ -281,6 +281,11 @@ PrefabInstance:
       propertyPath: pastPlantMesh
       value: 
       objectReference: {fileID: 3157994476173739514}
+    - target: {fileID: 4808092005113909923, guid: e528204069fb942409ca9ed1ac3633ea,
+        type: 3}
+      propertyPath: m_Name
+      value: PlantParticles
+      objectReference: {fileID: 0}
     - target: {fileID: 8199891988222124826, guid: e528204069fb942409ca9ed1ac3633ea,
         type: 3}
       propertyPath: m_Name
