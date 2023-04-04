@@ -3081,6 +3081,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   InteractIndicator: {fileID: 1523509948454303993}
+  tooClose: 0
   PickUpSource: {fileID: 1881662736119728234}
 --- !u!114 &1307491979195138040
 MonoBehaviour:
@@ -3313,6 +3314,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04b7a900714995745a88a65d75023a2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  numComplete: 0
   photoCountUI: {fileID: 6091205006682615648}
   invSlots:
   - itemType: 0
@@ -3321,6 +3323,7 @@ MonoBehaviour:
   - itemType: 1
     itemImage: {fileID: 0}
     itemAmount: 0
+  levelCompleteUI: {fileID: 0}
   keyCountUI:
   - {fileID: 298806086658122684}
   - {fileID: 1348368523636861236}
@@ -3341,6 +3344,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pauseMenuUI: {fileID: 7112380632272336711}
   controlsMenuUI: {fileID: 1547688062320415079}
+  gameUI: {fileID: 0}
 --- !u!1 &6122740566112591238
 GameObject:
   m_ObjectHideFlags: 0
@@ -6169,16 +6173,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TimeIndicatorCanvas
-      objectReference: {fileID: 0}
-    - target: {fileID: 8979223112875760930, guid: df6f5e1f41d994d5f8da8c15fd7d94bb,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -21.663025
-      objectReference: {fileID: 0}
-    - target: {fileID: 8979223112875760930, guid: df6f5e1f41d994d5f8da8c15fd7d94bb,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -19.899994
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: df6f5e1f41d994d5f8da8c15fd7d94bb, type: 3}

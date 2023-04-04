@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.InputSystem.Users;
 
 public class InputSchemeBasedImage : MonoBehaviour
 {
@@ -17,18 +18,21 @@ public class InputSchemeBasedImage : MonoBehaviour
 
     void OnEnable()
     {
-        UpdateImage(_playerInput);
-        _playerInput.onControlsChanged += UpdateImage;
+        InputUser.onChange += UpdateImage;
     }
 
     void OnDisable()
     {
-        _playerInput.onControlsChanged -= UpdateImage;
+        InputUser.onChange -= UpdateImage;
     }
     
-    void UpdateImage(PlayerInput playerInput)
+    void UpdateImage(InputUser inputUser, InputUserChange inputUserChange, InputDevice inputDevice)
     {
-        bool isGamepad = playerInput.currentControlScheme == "Gamepad";
+        if(inputUserChange != InputUserChange.ControlSchemeChanged)
+        {
+            return;
+        }
+        bool isGamepad = _playerInput.currentControlScheme == "Gamepad";
         
         if(KeyboardImage != null)
         {
