@@ -67,7 +67,7 @@ public class PauseMenu : MonoBehaviour
         // use 3 to load the level select screen 
         Time.timeScale = 1f;
         isPaused = false;
-        SceneManager.LoadScene(3);
+        SceneManager.LoadScene(5);
     }
     // // Start is called before the first frame update
     // void Start()
