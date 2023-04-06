@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 1631077478}
-  m_IndirectSpecularColor: {r: 0.345647, g: 0.26521102, b: 0.110015005, a: 1}
+  m_IndirectSpecularColor: {r: 0.1671536, g: 0.094176695, b: 0.023817966, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -4510,7 +4510,7 @@ PrefabInstance:
     - target: {fileID: 4534329154558151719, guid: a78c13db4c93a4b249b1cc719f4e8021,
         type: 3}
       propertyPath: m_Volume
-      value: 0.7
+      value: 0.884
       objectReference: {fileID: 0}
     - target: {fileID: 4534329154558151719, guid: a78c13db4c93a4b249b1cc719f4e8021,
         type: 3}
@@ -4625,7 +4625,7 @@ PrefabInstance:
     - target: {fileID: 7927843404189341426, guid: a78c13db4c93a4b249b1cc719f4e8021,
         type: 3}
       propertyPath: m_Volume
-      value: 0.7
+      value: 0.884
       objectReference: {fileID: 0}
     - target: {fileID: 7927843404189341426, guid: a78c13db4c93a4b249b1cc719f4e8021,
         type: 3}
@@ -23547,6 +23547,7 @@ Transform:
   - {fileID: 718972543}
   - {fileID: 166626908}
   - {fileID: 1174717761}
+  - {fileID: 1661276670}
   - {fileID: 57671632}
   - {fileID: 751433960}
   - {fileID: 95855392}
@@ -23555,7 +23556,6 @@ Transform:
   - {fileID: 349138983}
   - {fileID: 1410198463}
   - {fileID: 45397246}
-  - {fileID: 1661276670}
   - {fileID: 744099018}
   - {fileID: 1527032137}
   m_Father: {fileID: 0}
@@ -30436,7 +30436,7 @@ Transform:
   - {fileID: 1479317327}
   - {fileID: 1521486591357203545}
   m_Father: {fileID: 1284343734}
-  m_RootOrder: 34
+  m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!43 &1678603696
 Mesh:
