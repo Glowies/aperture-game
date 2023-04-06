@@ -21,7 +21,7 @@ EditorBuildSettings:
     path: Assets/Scenes/PolishedLevels/Level2-Greenhouse.unity
     guid: b987419c249384962bba4b19c41eb3ef
   - enabled: 1
-    path: Assets/Scenes/LevelSelect.unity
+    path: Assets/Scenes/PolishedLevels/LevelSelect.unity
     guid: bf608d67247596247ad6fd0332db5c88
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 9e7be553448fa2546aea5752021cbcf7,
