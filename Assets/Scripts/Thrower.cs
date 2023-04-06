@@ -8,7 +8,7 @@ public class Thrower : MonoBehaviour
     public Throwable GrabbedThrowable;
     private Rigidbody grabbedRigidBody;
 
-    [SerializeField] Transform pickupTarget;
+    
     public bool IsGrabbing; //bool for currently grabbing or not
     public float GrabMargin = 0.2f;
     public float GrabForwardOffset = 1f;
@@ -19,7 +19,12 @@ public class Thrower : MonoBehaviour
     private CharacterController _characterController;
     private float _throwTimeout = 0;
 
+    //Location where picked up object is held 
+    [SerializeField] Transform pickupTarget;
+    //tuning the object carry physics 
     private float objectSpeed = 12f;
+    //maximum distance the Throwable can be away from the player
+    [SerializeField] float maxHoldRange = 8f;
 
     void Awake()
     {
@@ -55,6 +60,12 @@ public class Thrower : MonoBehaviour
         Vector3 DirectionToPoint = pickupTarget.position - grabbedRigidBody.position;
         float distanceToPoint = DirectionToPoint.magnitude;
         grabbedRigidBody.velocity = DirectionToPoint * objectSpeed * distanceToPoint;
+        // Debug.Log(distanceToPoint);
+        // if the distance from the Throwable to the pickup target position in front of the player is too big,
+        // teleport the Throwable to the position in front of the player
+        if (distanceToPoint > maxHoldRange){
+            GrabbedThrowable.transform.position = pickupTarget.position;
+        }
     }
 
     public void GrabThrowable(Throwable throwable)
