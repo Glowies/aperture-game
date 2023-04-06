@@ -42,8 +42,8 @@ public class Throwable : MonoBehaviour
         IsGrabbed = false;
         // _rigidbody.constraints = _startConstraints;
         _rigidbody.useGravity = true;
-        _rigidbody.drag = 1;
-        // _rigidbody.AddForce(force, ForceMode.Impulse);
+        _rigidbody.drag = 0;
+        _rigidbody.AddForce(force, ForceMode.Impulse);
         ToggleInteractables(true);
     }
 
