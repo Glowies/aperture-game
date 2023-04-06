@@ -31,14 +31,18 @@ public class Throwable : MonoBehaviour
     public void Grab()
     {
         IsGrabbed = true;
-        _rigidbody.constraints = RigidbodyConstraints.FreezeAll;
+        // _rigidbody.constraints = RigidbodyConstraints.FreezeAll;
+        _rigidbody.useGravity = false;
+        _rigidbody.drag = 5;
         ToggleInteractables(false);
     }
 
     public void Throw(Vector3 force)
     {
         IsGrabbed = false;
-        _rigidbody.constraints = _startConstraints;
+        // _rigidbody.constraints = _startConstraints;
+        _rigidbody.useGravity = true;
+        _rigidbody.drag = 0;
         _rigidbody.AddForce(force, ForceMode.Impulse);
         ToggleInteractables(true);
     }
