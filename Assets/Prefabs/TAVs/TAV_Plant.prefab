@@ -392,6 +392,11 @@ PrefabInstance:
       propertyPath: m_TagString
       value: TAV
       objectReference: {fileID: 0}
+    - target: {fileID: 8199891988222124836, guid: e528204069fb942409ca9ed1ac3633ea,
+        type: 3}
+      propertyPath: m_Interpolate
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8199891988222124838, guid: e528204069fb942409ca9ed1ac3633ea,
         type: 3}
       propertyPath: m_RootOrder

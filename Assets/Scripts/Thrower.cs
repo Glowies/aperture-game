@@ -6,6 +6,9 @@ public class Thrower : MonoBehaviour
 {
     // This is the variable to store object currently being grabbed
     public Throwable GrabbedThrowable;
+    private Rigidbody grabbedRigidBody;
+
+    [SerializeField] Transform pickupTarget;
     public bool IsGrabbing; //bool for currently grabbing or not
     public float GrabMargin = 0.2f;
     public float GrabForwardOffset = 1f;
@@ -29,7 +32,7 @@ public class Thrower : MonoBehaviour
         }
     }
 
-    void LateUpdate()
+    void FixedUpdate()
     {
         // Like update, called on every frame after update functions
         if(IsGrabbing)
@@ -42,11 +45,14 @@ public class Thrower : MonoBehaviour
     private void FollowThrower()
     {
         // change position of grabbed object (GrabbedThrowable) based on player with height offset
-        var offset = Vector3.up * _characterController.height;
-        offset += Vector3.up * GrabbedThrowable.Height / 2f;
-        offset += Vector3.up * GrabMargin;
-        offset += GrabForwardOffset * transform.forward;
-        GrabbedThrowable.transform.position = transform.position + offset;
+        // var offset = Vector3.up * _characterController.height;
+        // offset += Vector3.up * GrabbedThrowable.Height / 2f;
+        // offset += Vector3.up * GrabMargin;
+        // offset += GrabForwardOffset * transform.forward;
+        // GrabbedThrowable.transform.position = transform.position + offset;
+        Vector3 DirectionToPoint = pickupTarget.position - grabbedRigidBody.position;
+        float distanceToPoint = DirectionToPoint.magnitude;
+        grabbedRigidBody.velocity = DirectionToPoint * 12f * distanceToPoint;
     }
 
     public void GrabThrowable(Throwable throwable)
@@ -65,6 +71,7 @@ public class Thrower : MonoBehaviour
         // interacted with 
         // assign grabbed object to GrabbedThrowable variable on grab
         GrabbedThrowable = throwable;
+        grabbedRigidBody = GrabbedThrowable.GetComponent<Rigidbody>();
         // freeze rigidbody contraints on grabbed object
         throwable.Grab();
         IsGrabbing = true;
@@ -87,5 +94,6 @@ public class Thrower : MonoBehaviour
         IsGrabbing = false;
         GrabbedThrowable.Throw(throwDireciton * ThrowForce);
         GrabbedThrowable = null;
+        grabbedRigidBody = null;
     }
 }
