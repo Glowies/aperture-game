@@ -43,7 +43,8 @@ public class Throwable : MonoBehaviour
         // _rigidbody.constraints = _startConstraints;
         _rigidbody.useGravity = true;
         _rigidbody.drag = 0;
-        _rigidbody.AddForce(force, ForceMode.Impulse);
+        // _rigidbody.AddForce(force, ForceMode.Impulse);
+        _rigidbody.velocity = new Vector3(0,0,0);
         ToggleInteractables(true);
     }
 

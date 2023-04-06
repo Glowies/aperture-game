@@ -21,6 +21,8 @@ public class Thrower : MonoBehaviour
 
     //Location where picked up object is held 
     [SerializeField] Transform pickupTarget;
+
+    [SerializeField] Transform dropTarget;
     //tuning the object carry physics 
     private float objectSpeed = 12f;
     //maximum distance the Throwable can be away from the player
@@ -106,6 +108,7 @@ public class Thrower : MonoBehaviour
         
         IsGrabbing = false;
         GrabbedThrowable.Throw(throwDireciton * ThrowForce);
+        GrabbedThrowable.transform.position = dropTarget.position;
         GrabbedThrowable = null;
         grabbedRigidBody = null;
     }
