@@ -19,6 +19,8 @@ public class Thrower : MonoBehaviour
     private CharacterController _characterController;
     private float _throwTimeout = 0;
 
+    private float objectSpeed = 12f;
+
     void Awake()
     {
         TryGetComponent(out _characterController);
@@ -52,7 +54,7 @@ public class Thrower : MonoBehaviour
         // GrabbedThrowable.transform.position = transform.position + offset;
         Vector3 DirectionToPoint = pickupTarget.position - grabbedRigidBody.position;
         float distanceToPoint = DirectionToPoint.magnitude;
-        grabbedRigidBody.velocity = DirectionToPoint * 12f * distanceToPoint;
+        grabbedRigidBody.velocity = DirectionToPoint * objectSpeed * distanceToPoint;
     }
 
     public void GrabThrowable(Throwable throwable)
