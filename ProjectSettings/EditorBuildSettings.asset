@@ -15,8 +15,8 @@ EditorBuildSettings:
     path: Assets/Scenes/PolishedLevels/Level0.unity
     guid: 1012e954b41b242449d0584076a88e02
   - enabled: 1
-    path: Assets/Scenes/PolishedLevels/TutorialLevel.unity
-    guid: 2895b59d96eab0f46a1ff1bcb66d0c4c
+    path: Assets/Scenes/PolishedLevels/Level1-House.unity
+    guid: d9a42daa63b7a45eabaf9a3d15724c21
   - enabled: 1
     path: Assets/Scenes/PolishedLevels/Level2-Greenhouse.unity
     guid: b987419c249384962bba4b19c41eb3ef
